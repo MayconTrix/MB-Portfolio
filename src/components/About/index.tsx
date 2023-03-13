@@ -12,6 +12,7 @@ export function About() {
           width="50%"
         />
         <Text fontSize="3.2rem">Sobre</Text>
+        <Text fontSize="3.2rem">Teste</Text>
       </Box>
     </Flex>
   );
