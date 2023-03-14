@@ -1,4 +1,5 @@
 import { About } from "@/components/About";
+import { Header } from "@/components/Header";
 import { Flex } from "@chakra-ui/react";
 
 export default function Home() {
@@ -11,6 +12,8 @@ export default function Home() {
       height="100vh"
       backgroundColor="gray.900"
     >
+      <About />
+      <About />
       <About />
     </Flex>
   );
