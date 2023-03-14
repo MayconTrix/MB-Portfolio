@@ -78,7 +78,7 @@ export const theme = extendTheme({
         width: "1rem",
       },
       "body::-webkit-scrollbar-track": {
-        background: "cyan.400",
+        background: "cyan.700",
       },
       "body::-webkit-scrollbar-thumb": {
         backgroundColor: "gray.900",
