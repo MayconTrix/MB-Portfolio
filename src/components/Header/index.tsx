@@ -1,4 +1,12 @@
 import { Box, Flex, Img, Text } from "@chakra-ui/react";
+import {
+  FacebookLogo,
+  FigmaLogo,
+  GithubLogo,
+  InstagramLogo,
+  LinkedinLogo,
+  TwitterLogo,
+} from "@phosphor-icons/react";
 
 export function Header() {
   const today = new Date();
@@ -32,7 +40,14 @@ export function Header() {
         </Text>
       </Flex>
       <Flex height="4.4rem" backgroundColor="black">
-        Hello World
+        <Flex marginLeft="2.2rem" align="center" color="cyan.400" gap="1.8rem">
+          <TwitterLogo size={28} />
+          <FigmaLogo size={28} />
+          <InstagramLogo size={28} />
+          <FacebookLogo size={28} />
+          <LinkedinLogo size={28} />
+          <GithubLogo size={28} />
+        </Flex>
       </Flex>
     </Box>
   );

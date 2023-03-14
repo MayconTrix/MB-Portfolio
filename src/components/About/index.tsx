@@ -67,7 +67,7 @@ export function About() {
             </Text>
           </Flex>
           <Box justifySelf="end" width="30.2rem" height="32.6rem">
-            <Img src="/Foto.png" />
+            <Img src="/Foto.png" alt="Foto de Maycon Batista usando terno" />
           </Box>
         </Flex>
         <Box
