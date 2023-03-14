@@ -1,4 +1,12 @@
-import { Box, Flex, Img, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  Flex,
+  Img,
+  Text,
+} from "@chakra-ui/react";
 import {
   FacebookLogo,
   FigmaLogo,
@@ -47,6 +55,36 @@ export function Header() {
           <FacebookLogo size={28} />
           <LinkedinLogo size={28} />
           <GithubLogo size={28} />
+        </Flex>
+        <Flex
+          flex="1"
+          justify="flex-end"
+          align="center"
+          color="cyan.400"
+          gap="1.8rem"
+        >
+          <Breadcrumb separator="-">
+            <BreadcrumbItem>
+              <BreadcrumbLink href="#">Início</BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem>
+              <BreadcrumbLink href="#">Sobre</BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem isCurrentPage>
+              <BreadcrumbLink href="#">Skills</BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem isCurrentPage>
+              <BreadcrumbLink href="#">Trabalhos</BreadcrumbLink>
+            </BreadcrumbItem>
+          </Breadcrumb>
+          <Img
+            src="/CloudSun.svg"
+            margin="0 6.6rem"
+            alt="Mudar para tema claro"
+          />
         </Flex>
       </Flex>
     </Box>
