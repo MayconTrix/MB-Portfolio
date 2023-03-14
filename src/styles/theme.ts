@@ -8,7 +8,7 @@ export const theme = extendTheme({
       "600": "#4A5568",
       "700": "#2D3748",
       "800": "#1A202C",
-      "900": "#0C4A6E",
+      "900": "#171923",
     },
     cyan: {
       "50": "#EDFDFD",
@@ -58,7 +58,6 @@ export const theme = extendTheme({
     global: {
       html: {
         fontSize: "62.5%",
-        background: "#262c38",
         color: "gray.400",
         boxSizing: "border-box",
         padding: 0,
@@ -67,30 +66,28 @@ export const theme = extendTheme({
         MozOsxFontSmoothing: "grayscale",
         scrollBehavior: "smooth",
         scrollbarWidth: "thin",
-        scrollbarColor: "#a0aec0",
+        scrollbarColor: "red",
       },
       body: {
         maxWidth: "100vw",
         overFlowX: "hidden",
         fontSize: "1.6rem",
+        background: "gray.800",
       },
       "body::-webkit-scrollbar": {
-        width: "0.7rem",
+        width: "1rem",
       },
       "body::-webkit-scrollbar-track": {
-        background: "#a0aec0",
+        background: "cyan.400",
       },
       "body::-webkit-scrollbar-thumb": {
-        backgroundColor: "#4a5568",
+        backgroundColor: "gray.900",
+        borderRadius: "0.4rem",
+      },
+      "body::-webkit-scrollbar-thumb:hover": {
+        backgroundColor: "gray.700",
         borderRadius: "0.4rem",
       },
     },
   },
 });
-
-// export const COLORS = {
-//   STRONG: ["gray.300", "gray.800"],
-//   WEAK: ["gray.500", "gray.600"],
-// };
-
-// export const ICON_COLORS = ["#A0AEC0", "#718096"];
