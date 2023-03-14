@@ -6,7 +6,7 @@ export function About() {
       marginTop="4.8rem"
       align="center"
       justify="center"
-      height="55rem"
+      height="50rem"
       width="100%"
       backgroundColor="gray.900"
     >

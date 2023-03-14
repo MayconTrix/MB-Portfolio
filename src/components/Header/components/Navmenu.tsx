@@ -20,6 +20,8 @@ export function Navmenu() {
       zIndex="3"
       // position={isFixed}
       position="sticky"
+      maxWidth="144rem"
+      width="100%"
       top="3.2rem"
       height="4.4rem"
       backgroundColor="black"
