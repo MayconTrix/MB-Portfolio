@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Img, Text } from "@chakra-ui/react";
+import { Box, Flex, Img, Text } from "@chakra-ui/react";
 
 export function About() {
   return (
@@ -30,7 +30,12 @@ export function About() {
         <Flex justifyContent="flex-end" width="100%" padding="0.8rem">
           <Flex flex="1" direction="column" alignItems="center">
             <Flex direction="column" alignItems="center" marginBottom="2rem">
-              <Text color="cyan.700" fontSize="3.2rem" fontWeight="bold">
+              <Box
+                as="text"
+                color="cyan.700"
+                fontSize="3.2rem"
+                fontWeight="bold"
+              >
                 Sobre
                 <Box position="relative">
                   <Box
@@ -41,7 +46,7 @@ export function About() {
                     width="65%"
                   />
                 </Box>
-              </Text>
+              </Box>
             </Flex>
             <Text
               width="66rem"

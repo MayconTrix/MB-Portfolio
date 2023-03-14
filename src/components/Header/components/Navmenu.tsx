@@ -18,6 +18,7 @@ export function Navmenu() {
   return (
     <Flex
       zIndex="3"
+      // position={isFixed}
       position="sticky"
       top="3.2rem"
       height="4.4rem"

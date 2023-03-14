@@ -17,11 +17,11 @@ import {
 } from "@phosphor-icons/react";
 
 import { useState, useEffect } from "react";
-// import { Navmenu } from "./components/Navmenu";
+import { Navmenu } from "./components/Navmenu";
 
 export function Header() {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [isFixed, setFixed] = useState("sticky");
+  // const [isFixed, setFixed] = useState("sticky");
 
   const today = new Date();
   const day = today.getDate();
@@ -41,25 +41,32 @@ export function Header() {
     };
   }, []);
 
-  useEffect(() => {
-    const toggleVisibility = () => {
-      if (window.pageYOffset > 163) {
-        setFixed("fixed");
-      } else {
-        setFixed("sticky");
-      }
-    };
-    window.addEventListener("scroll", toggleVisibility);
+  // useEffect(() => {
+  //   const toggleFixed = () => {
+  //     if (window.pageYOffset > 163) {
+  //       setFixed("fixed");
+  //     } else {
+  //       setFixed("sticky");
+  //     }
+  //   };
+  //   window.addEventListener("scroll", toggleFixed);
 
-    return () => window.removeEventListener("scroll", toggleVisibility);
-  }, []);
+  //   return () => window.removeEventListener("scroll", toggleFixed);
+  // }, []);
 
   return (
-    <Box zIndex="3" height="100vh" maxWidth="144rem" margin="0 auto">
+    <Box
+      zIndex="3"
+      // height="100vh"
+      height="100%"
+      maxWidth="144rem"
+      margin="0 auto"
+    >
       <Flex
         zIndex="3"
         // position={isFixed}
         position="sticky"
+        maxWidth="144rem"
         top="0"
         width="100%"
         height="3.2rem"
@@ -67,11 +74,12 @@ export function Header() {
         align="center"
         justify="center"
       >
-        <Text fontSize="1.2rem" color="cyan.400">
+        {/* <Text fontSize="1.2rem" color="cyan.400">
           {date}
-        </Text>
+        </Text> */}
       </Flex>
       <Flex
+        // marginTop="3.2rem"
         align="center"
         justify="center"
         height="16.2rem"
@@ -91,6 +99,8 @@ export function Header() {
         zIndex="3"
         // position={isFixed}
         position="sticky"
+        maxWidth="144rem"
+        width="100%"
         top="3.2rem"
         height="4.4rem"
         backgroundColor="black"
