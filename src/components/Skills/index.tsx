@@ -43,19 +43,59 @@ export function Skills() {
       </Box>
       <Flex
         zIndex="2"
-        width="79.2rem"
+        width="82rem"
         height="9.2rem"
-        gap="3.2rem"
+        gap="3rem"
         borderBottom="6px solid #0BC5EA"
       >
-        <Img src="/github.svg" height="8.2rem"></Img>
-        <Img src="/figma.svg" height="8.2rem"></Img>
-        <Img src="/html5.svg" height="8.2rem"></Img>
-        <Img src="/css3.svg" height="8.2rem"></Img>
-        <Img src="/javascript.svg" height="8.2rem"></Img>
-        <Img src="/typescript.svg" height="8.2rem"></Img>
-        <Img src="/react.svg" height="8.2rem"></Img>
-        <Img src="/nextjs.svg" height="8.2rem" alt="simbolo do react"></Img>
+        <Img
+          src="/github.svg"
+          height="8.2rem"
+          title="GitHub"
+          alt="Simbolo do GitHub"
+        />
+        <Img
+          src="/figma.svg"
+          height="8.2rem"
+          title="Figma"
+          alt="Simbolo do Figma "
+        />
+        <Img
+          src="/html5.svg"
+          height="8.2rem"
+          title="HTML"
+          alt="Simbolo do Html5"
+        />
+        <Img
+          src="/css3.svg"
+          height="8.2rem"
+          title="CSS"
+          alt="Simbolo do CSS3"
+        />
+        <Img
+          src="/javascript.svg"
+          height="8.2rem"
+          title="JavaScript"
+          alt="Simbolo do JavaScript"
+        />
+        <Img
+          src="/typescript.svg"
+          height="8.2rem"
+          title="TypeScript"
+          alt="Simbolo do TypeScript"
+        />
+        <Img
+          src="/react.svg"
+          height="8.2rem"
+          title="React"
+          alt="Simbolo do React"
+        />
+        <Img
+          src="/nextjs.svg"
+          height="8.2rem"
+          title="NextJS"
+          alt="simbolo do react"
+        />
       </Flex>
     </Flex>
   );
