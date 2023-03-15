@@ -36,7 +36,7 @@ export function Head() {
       <Flex
         marginTop="3.2rem"
         align="center"
-        justify="center"
+        // justify="center"
         height="16.2rem"
         backgroundImage="/Bgheader.png"
         padding="0 45rem 0 0"
@@ -44,7 +44,12 @@ export function Head() {
         <Box
           transform={`translate3d(0px, ${0 + scrollPosition * 0.5}px, 100px)`}
         >
-          <Text fontSize="3.2rem" color="cyan.400">
+          <Text
+            width="100%"
+            marginLeft="14rem"
+            fontSize="3.2rem"
+            color="cyan.400"
+          >
             Olá, seja bem vindo, eu sou <strong>Maycon Batista</strong>
           </Text>
         </Box>
