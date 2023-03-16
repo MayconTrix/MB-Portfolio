@@ -6,7 +6,7 @@ export function Skills() {
       marginTop="4.8rem"
       align="center"
       justify="center"
-      height="54.8rem"
+      height="58.8rem"
       width="100%"
       backgroundColor="black"
       direction="column"
@@ -25,9 +25,10 @@ export function Skills() {
             />
           </Box>
         </Box>
-        <Text marginTop="1.6rem" color="cyan.500">
+        <Text marginTop="1.6rem" color="cyan.500" textAlign="center">
           Eu tenho um <strong>pouco de experiência</strong> com essas
           tecnologias.
+          <br /> Entre outras...
         </Text>
       </Flex>
 
@@ -37,8 +38,8 @@ export function Skills() {
           position="absolute"
           bottom="-200"
           right="250"
-          width="210px"
-          height="524px"
+          width="21rem"
+          height="54.4rem"
         />
       </Box>
       <Flex
