@@ -36,7 +36,6 @@ export function Head() {
       <Flex
         marginTop="3.2rem"
         align="center"
-        // justify="center"
         height="16.2rem"
         backgroundImage="/Bgheader.png"
         padding="0 45rem 0 0"
