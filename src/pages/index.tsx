@@ -1,7 +1,10 @@
+import { Box } from "@chakra-ui/react";
 import { About } from "@/components/About";
+import { Footer } from "@/components/Footer";
 import { Head } from "@/components/Head";
 import { Skills } from "@/components/Skills";
-import { Box, Flex } from "@chakra-ui/react";
+import { Works } from "@/components/Works";
+import { Que } from "@/components/Que";
 
 export default function Home() {
   return (
@@ -15,6 +18,9 @@ export default function Home() {
       <Head />
       <About />
       <Skills />
+      <Que />
+      <Works />
+      <Footer />
     </Box>
   );
 }

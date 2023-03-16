@@ -6,9 +6,9 @@ export function About() {
       marginTop="4.8rem"
       align="center"
       justify="center"
-      height="54rem"
+      height="58.8rem"
       width="100%"
-      backgroundColor="gray.900"
+      // backgroundColor="gray.900"
     >
       <Box height="34.1rem" width="126rem" position="relative">
         <Box
