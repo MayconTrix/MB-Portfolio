@@ -31,6 +31,7 @@ export function Head() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <>
       <Flex
