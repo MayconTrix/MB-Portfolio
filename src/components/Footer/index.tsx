@@ -1,4 +1,4 @@
-import { Box, Flex, Img, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 export function Footer() {
   return (
@@ -11,7 +11,6 @@ export function Footer() {
       direction="column"
       justifyContent="space-around"
       alignItems="center"
-      // gap="3rem"
     >
       <Flex
         width="100%"

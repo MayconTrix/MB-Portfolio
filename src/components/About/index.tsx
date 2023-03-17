@@ -8,7 +8,6 @@ export function About() {
       justify="center"
       height="58.8rem"
       width="100%"
-      // backgroundColor="gray.900"
     >
       <Box height="34.1rem" width="126rem" position="relative">
         <Box

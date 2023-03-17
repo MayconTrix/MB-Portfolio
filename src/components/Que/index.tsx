@@ -1,4 +1,4 @@
-import { Box, Flex, Img, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 
 export function Que() {
   return (
@@ -8,7 +8,6 @@ export function Que() {
       justify="center"
       height="58.8rem"
       width="100%"
-      // backgroundColor="gray.900"
       direction="column"
       gap="3rem"
     >
