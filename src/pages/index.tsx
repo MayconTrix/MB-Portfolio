@@ -3,7 +3,7 @@ import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import { Head } from "@/components/Head";
 import { Skills } from "@/components/Skills";
-import { Works } from "@/components/Works";
+import { Portfolio } from "@/components/Portfolio";
 import { Que } from "@/components/Que";
 
 export default function Home() {
@@ -18,8 +18,8 @@ export default function Home() {
       <Head />
       <About />
       <Skills />
+      <Portfolio />
       <Que />
-      <Works />
       <Footer />
     </Box>
   );

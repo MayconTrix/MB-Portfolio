@@ -92,6 +92,10 @@ export function Head() {
             </BreadcrumbItem>
 
             <BreadcrumbItem isCurrentPage>
+              <BreadcrumbLink href="#">Portfólio</BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem isCurrentPage>
               <BreadcrumbLink href="#">Trabalhos</BreadcrumbLink>
             </BreadcrumbItem>
           </Breadcrumb>
