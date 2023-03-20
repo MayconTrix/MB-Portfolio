@@ -13,12 +13,12 @@ export function Works() {
     >
       <Flex direction="column" alignItems="center" marginBottom="2rem">
         <Box as="text" color="cyan.700" fontSize="3.2rem" fontWeight="bold">
-          Works
+          Portfólio
           <Box position="relative">
             <Box
               position="absolute"
               bottom="0"
-              left="0"
+              left="10"
               borderBottom="0.8rem solid #0BC5EA"
               width="65%"
             />
