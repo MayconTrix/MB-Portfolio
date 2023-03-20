@@ -1,12 +1,12 @@
-import { Box, Flex, Img, Text } from "@chakra-ui/react";
+import { Box, Flex, Img, Link, Text } from "@chakra-ui/react";
 
 export function Skills() {
   return (
     <Flex
-      marginTop="4.8rem"
+      marginTop="5rem"
       align="center"
       justify="center"
-      height="58.8rem"
+      height="59rem"
       width="100%"
       backgroundColor="black"
       direction="column"
@@ -28,7 +28,15 @@ export function Skills() {
         <Text marginTop="1.6rem" color="cyan.500" textAlign="center">
           Eu tenho um <strong>pouco de experiência</strong> com essas
           tecnologias.
-          <br /> Entre outras...
+          <br /> Para maiores informações,{" "}
+          <Link
+            fontWeight="bold"
+            fontSize="1.8rem"
+            href="https://flowcv.com/resume/sssput1so9"
+            isExternal
+          >
+            Curriculum Vitae
+          </Link>
         </Text>
       </Flex>
 
