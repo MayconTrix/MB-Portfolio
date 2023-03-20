@@ -1,6 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 
-export function Works() {
+export function Portfolio() {
   return (
     <Flex
       marginTop="5rem"
