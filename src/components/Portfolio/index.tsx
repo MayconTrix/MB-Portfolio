@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import { PortfolioCard } from "./components/PortfolioCard";
 
 export function Portfolio() {
@@ -6,13 +6,12 @@ export function Portfolio() {
     <Flex
       marginTop="5rem"
       align="center"
-      // justify="center"
-      height="58.8rem"
+      // height="58.8rem"
       width="100%"
       direction="column"
       gap="3rem"
     >
-      <Flex direction="column" alignItems="center" marginBottom="2rem">
+      <Flex direction="column" alignItems="center" margin="5rem 0">
         <Box as="text" color="cyan.700" fontSize="3.2rem" fontWeight="bold">
           Portfólio
           <Box position="relative">
