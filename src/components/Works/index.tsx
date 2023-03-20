@@ -8,8 +8,6 @@ export function Works() {
       justify="center"
       height="58.8rem"
       width="100%"
-      backgroundColor="black"
-      bgGradient="linear(159.8deg, gray.900 49.8%, black 50%)"
       direction="column"
       gap="3rem"
     >
@@ -27,7 +25,7 @@ export function Works() {
           </Box>
         </Box>
         <Text marginTop="1.6rem" color="cyan.500" textAlign="center">
-          Que?
+          Textinho?
         </Text>
       </Flex>
     </Flex>
