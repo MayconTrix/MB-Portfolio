@@ -1,5 +1,5 @@
 import { Box, Flex } from "@chakra-ui/react";
-import { PortfolioCard } from "./components/PortfolioCard";
+import PortfolioCard from "./components/PortfolioCard";
 
 export function Portfolio() {
   return (

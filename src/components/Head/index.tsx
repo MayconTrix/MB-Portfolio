@@ -103,6 +103,7 @@ export function Head() {
             src="/CloudSun.svg"
             margin="0 6.6rem"
             alt="Mudar para tema claro"
+            title="Tema"
           />
         </Flex>
       </Flex>
