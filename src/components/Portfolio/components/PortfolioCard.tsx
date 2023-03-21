@@ -1,3 +1,4 @@
+import React from "react";
 import { PORTFOLIO } from "@/constants/portfolio";
 import {
   Flex,
@@ -7,25 +8,23 @@ import {
   Button,
   Link as ReachLink,
 } from "@chakra-ui/react";
-// import type { Property } from "csstype";
-import React from "react";
 
-// interface PortfolioCardProps {
-//   row: Property.FlexDirection;
-//   image: string;
-//   title: string;
-//   description: string;
-//   webHref: string;
-//   gitHref: string;
-//   figmaHref: string;
-// }
+interface PortfolioCardProps {
+  direction: any;
+  image: string;
+  title: string;
+  description: string;
+  webHref: string;
+  gitHref: string;
+  figmaHref: string;
+}
 
 export default function PortfolioCard() {
   return (
     <>
-      {PORTFOLIO.map((card: any) => (
+      {PORTFOLIO.map((card: PortfolioCardProps) => (
         <>
-          <Flex marginTop="5rem" flexDirection={card.row}>
+          <Flex marginTop="5rem" direction={card.direction}>
             <Img
               width="32rem"
               height="21.2rem"

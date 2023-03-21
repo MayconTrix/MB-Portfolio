@@ -1,6 +1,6 @@
 export const PORTFOLIO = [
   {
-    row: "row",
+    direction: "row",
     image: "/MyPortfolioCapa.png",
     title: "Portfólio Maycon Batista",
 
@@ -14,7 +14,7 @@ export const PORTFOLIO = [
       "https://www.figma.com/file/HvcpWyT1rSMKVN6cHcZ7Zo/My-Portfolio?t=PiJMLkpu4rpJly16-0",
   },
   {
-    row: "row-reverse",
+    direction: "row-reverse",
     image: "/MyPortfolioCapa.png",
     title: "Portfólio Maycon Batista",
 
