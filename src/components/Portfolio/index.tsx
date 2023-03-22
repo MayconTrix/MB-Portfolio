@@ -7,7 +7,6 @@ export function Portfolio() {
     <Flex
       marginTop="5rem"
       align="center"
-      // height="58.8rem"
       width="100%"
       direction="column"
       gap="3rem"
