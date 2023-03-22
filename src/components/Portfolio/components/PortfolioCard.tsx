@@ -7,6 +7,7 @@ import {
   Heading,
   Button,
   Link as ReachLink,
+  Box,
 } from "@chakra-ui/react";
 
 interface PortfolioCardProps {
@@ -22,9 +23,9 @@ interface PortfolioCardProps {
 export default function PortfolioCard() {
   return (
     <>
-      {PORTFOLIO.map((card: PortfolioCardProps) => (
-        <>
-          <Flex marginTop="5rem" direction={card.direction}>
+      {PORTFOLIO.map((card: PortfolioCardProps, index) => (
+        <Box key={index}>
+          <Flex marginTop="10rem" direction={card.direction}>
             <Img
               width="32rem"
               height="21.2rem"
@@ -71,7 +72,7 @@ export default function PortfolioCard() {
               </Flex>
             </Flex>
           </Flex>
-        </>
+        </Box>
       ))}
     </>
   );
