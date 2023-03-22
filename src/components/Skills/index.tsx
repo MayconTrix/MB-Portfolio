@@ -26,7 +26,7 @@ export function Skills() {
           </Box>
         </Box>
         <Text marginTop="1.6rem" color="cyan.500" textAlign="center">
-          Eu tenho um <strong>pouco de experiência</strong> com essas
+          Eu tenho um <strong>pouco de experiência</strong> com estas
           tecnologias.
           <br /> Para maiores informações,{" "}
           <Link

@@ -12,6 +12,7 @@ import {
 
 interface PortfolioCardProps {
   direction: any;
+  textDirection: any;
   image: string;
   title: string;
   description: string;
@@ -36,15 +37,20 @@ export default function PortfolioCard() {
             <Flex
               direction="column"
               color="cyan.500"
-              margin="0 4rem"
+              margin="0 6rem"
               justify="space-between"
+              textAlign={card.textDirection}
             >
               <Heading>{card.title}</Heading>
               <Text
                 width="38rem"
                 dangerouslySetInnerHTML={{ __html: card.description }}
               />
-              <Flex gap="1.5rem" fontWeight="bold">
+              <Flex
+                gap="1.5rem"
+                fontWeight="bold"
+                justifyContent={card.textDirection}
+              >
                 <Button
                   as={ReachLink}
                   href={card.webHref}

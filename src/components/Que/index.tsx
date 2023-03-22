@@ -13,7 +13,7 @@ export function Que() {
       direction="column"
       gap="3rem"
     >
-      <Flex direction="column" alignItems="center" marginBottom="2rem">
+      <Flex direction="column" marginBottom="2rem">
         <Box as="text" color="cyan.700" fontSize="3.2rem" fontWeight="bold">
           Que?
           <Box position="relative">
