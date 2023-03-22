@@ -101,7 +101,7 @@ export function Head() {
           </Breadcrumb>
           <Img
             src="/CloudSun.svg"
-            margin="0 6.6rem"
+            margin="0 4rem"
             alt="Mudar para tema claro"
             title="Tema"
           />
