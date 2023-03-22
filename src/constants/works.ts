@@ -6,6 +6,6 @@ export const WORKS = [
     url: "",
     logo: "RTechLogo.png",
     title: "Empresa RembrandTech",
-    alt: "Imagem de uma capivara segurando uma copo de café, e o nome da empresa a baixo ",
+    alt: "Imagem de uma capivara segurando uma copo de café, e o nome da empresa logo a baixo ",
   },
 ];
