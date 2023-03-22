@@ -4,6 +4,7 @@ export const PORTFOLIO = [
     textDirection: "start",
     image: "/MyPortfolioCapa.png",
     title: "Portfólio Maycon Batista",
+    alt: "Imagem de uma previa do site",
     description: `Este portfólio foi criado para critérios de aprendizado e uma breve demonstração dos meus conhecimentos.<br /><br />
       <b>Ferramentas:</b> Figma, NextJS e ChrakraUI`,
     webHref: "",
@@ -16,6 +17,7 @@ export const PORTFOLIO = [
     textDirection: "end",
     image: "/SaborCuritibano.png",
     title: "Restaurante Sabor Curitibano",
+    alt: "Imagem de uma previa do site",
     description: `Projeto criado inicialmente para estudos e compreensão, aprimorando ainda mais meus conhecimentos obtidos nos cursos.<br /><br />
     <b>Ferramentas:</b> HTML, CSS & JavaScript`,
     webHref: "https://web-restaurant-one.vercel.app/",
@@ -27,6 +29,7 @@ export const PORTFOLIO = [
     textDirection: "start",
     image: "/CapaRembrandtech.png",
     title: "RembrandTech WebSite",
+    alt: "Imagem de uma previa do site",
     description: `Projeto criado e desenvolvido para a empresa RembrandtTech, feito toda a parte de UI e Front-end.<br /><br />
       <b>Ferramentas:</b> Figma, NextJS e ChrakraUI`,
     webHref: "",
