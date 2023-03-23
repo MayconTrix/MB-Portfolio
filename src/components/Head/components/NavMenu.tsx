@@ -3,31 +3,35 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   Flex,
-  // useColorModeValue,
+  Link as ReachLink,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
-export default function NavMenu({ scrollTo }: any) {
-  // const textColor = useColorModeValue("cyan.400", "cyan.300");
-  // const hoverColor = useColorModeValue("cyan.300", "cyan.400");
+interface NavMenuProps {
+  color?: string;
+  fontWeight?: string;
+  scrollTo?: any;
+}
 
+export default function NavMenu({ scrollTo, color, fontWeight }: NavMenuProps) {
   return (
     <Breadcrumb
-      // fontWeight="semibold"
-      color="cyan.400"
-      spacing="8px"
+      fontWeight={fontWeight}
+      color={color}
+      spacing="0.8rem"
       separator="-"
       display={["none", "none", "none", "flex"]}
     >
       {NAVMENU.map((option) => (
         <BreadcrumbItem key={option.id} cursor="pointer">
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
+          <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }}>
             <Flex
-              as="a"
+              as={ReachLink}
               title={option.name}
               onClick={() => scrollTo(option.id)}
               _hover={{
                 color: "cyan.300",
+                textDecoration: "none",
               }}
               cursor="pointer"
             >

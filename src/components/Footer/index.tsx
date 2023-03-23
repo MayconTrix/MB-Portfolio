@@ -1,4 +1,6 @@
 import { Flex, Text } from "@chakra-ui/react";
+import NavMenu from "../Head/components/NavMenu";
+import { SocialIcons } from "../Head/components/SocialIcons";
 
 export function Footer() {
   return (
@@ -33,11 +35,12 @@ export function Footer() {
           justify="center"
           width="55rem"
           height="32rem"
-          backgroundColor="cyan.400"
+          backgroundColor="cyan.500"
           borderRadius="0.2rem"
+          gap="3rem"
         >
-          <Flex>Menu</Flex>
-          <Flex>Social</Flex>
+          <NavMenu color="black" fontWeight="semibold" />
+          <SocialIcons color="black" />
         </Flex>
       </Flex>
       <Text fontSize="1.2rem" marginTop="3.8rem" color="cyan.400">
