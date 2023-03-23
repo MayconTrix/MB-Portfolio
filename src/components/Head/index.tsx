@@ -16,6 +16,7 @@ import {
   LinkedinLogo,
   GithubLogo,
 } from "@phosphor-icons/react";
+import NavMenu from "./components/NavMenu";
 
 export function Head() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -78,27 +79,7 @@ export function Head() {
           color="cyan.400"
           gap="1.8rem"
         >
-          <Breadcrumb separator="-">
-            <BreadcrumbItem>
-              <BreadcrumbLink href="#">Início</BreadcrumbLink>
-            </BreadcrumbItem>
-
-            <BreadcrumbItem>
-              <BreadcrumbLink href="#">Sobre</BreadcrumbLink>
-            </BreadcrumbItem>
-
-            <BreadcrumbItem isCurrentPage>
-              <BreadcrumbLink href="#">Skills</BreadcrumbLink>
-            </BreadcrumbItem>
-
-            <BreadcrumbItem isCurrentPage>
-              <BreadcrumbLink href="#">Portfólio</BreadcrumbLink>
-            </BreadcrumbItem>
-
-            <BreadcrumbItem isCurrentPage>
-              <BreadcrumbLink href="#">Trabalhos</BreadcrumbLink>
-            </BreadcrumbItem>
-          </Breadcrumb>
+          <NavMenu />
           <Img
             src="/CloudSun.svg"
             margin="0 4rem"
