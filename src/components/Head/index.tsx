@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { SOCIAL_MEDIA } from "@/constants/socials";
-import { Flex, Img, Box, Text, Link as ReachLink } from "@chakra-ui/react";
+import { Flex, Img, Box, Text } from "@chakra-ui/react";
 import NavMenu from "./components/NavMenu";
 import { motion } from "framer-motion";
+import { SocialIcons } from "./components/SocialIcons";
 
 export function Head() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -50,22 +50,7 @@ export function Head() {
         height="4.4rem"
         backgroundColor="black"
       >
-        <Flex marginLeft="2.2rem" align="center" gap="2.5rem">
-          {SOCIAL_MEDIA.map((social, index) => (
-            <Box as={ReachLink} href={social.url} key={index} isExternal>
-              <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 1 }}>
-                <Img
-                  height="2.8rem"
-                  borderRadius="0.8rem"
-                  src={social.icon}
-                  title={social.name}
-                  alt={social.alt}
-                  width="2.8rem"
-                />
-              </motion.div>
-            </Box>
-          ))}
-        </Flex>
+        <SocialIcons margin="6rem" color="cyan.400" />
         <Flex
           flex="1"
           justify="flex-end"
@@ -74,12 +59,14 @@ export function Head() {
           gap="1.8rem"
         >
           <NavMenu />
-          <Img
-            src="/CloudSun.svg"
-            margin="0 4rem"
-            alt="Mudar para tema claro"
-            title="Tema"
-          />
+          <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 1 }}>
+            <Img
+              src="/CloudSun.svg"
+              margin="0 6rem"
+              alt="Mudar para tema claro"
+              title="Tema"
+            />
+          </motion.div>
         </Flex>
       </Flex>
     </>
