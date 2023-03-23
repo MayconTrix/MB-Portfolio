@@ -58,49 +58,49 @@ export function Skills() {
         borderBottom="6px solid #0BC5EA"
       >
         <Img
-          src="/github.svg"
+          src="/skills/github.svg"
           height="8.2rem"
           title="GitHub"
           alt="Simbolo do GitHub"
         />
         <Img
-          src="/figma.svg"
+          src="/skills/figma.svg"
           height="8.2rem"
           title="Figma"
           alt="Simbolo do Figma "
         />
         <Img
-          src="/html5.svg"
+          src="/skills/html5.svg"
           height="8.2rem"
           title="HTML"
           alt="Simbolo do Html5"
         />
         <Img
-          src="/css3.svg"
+          src="/skills/css3.svg"
           height="8.2rem"
           title="CSS"
           alt="Simbolo do CSS3"
         />
         <Img
-          src="/javascript.svg"
+          src="/skills/javascript.svg"
           height="8.2rem"
           title="JavaScript"
           alt="Simbolo do JavaScript"
         />
         <Img
-          src="/typescript.svg"
+          src="/skills/typescript.svg"
           height="8.2rem"
           title="TypeScript"
           alt="Simbolo do TypeScript"
         />
         <Img
-          src="/react.svg"
+          src="/skills/react.svg"
           height="8.2rem"
           title="React"
           alt="Simbolo do React"
         />
         <Img
-          src="/nextjs.svg"
+          src="/skills/nextjs.svg"
           height="8.2rem"
           title="NextJS"
           alt="simbolo do react"

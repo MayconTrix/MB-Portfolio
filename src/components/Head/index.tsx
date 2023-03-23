@@ -1,22 +1,8 @@
 import { useEffect, useState } from "react";
-import {
-  Flex,
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  Img,
-  Box,
-  Text,
-} from "@chakra-ui/react";
-import {
-  TwitterLogo,
-  FigmaLogo,
-  InstagramLogo,
-  FacebookLogo,
-  LinkedinLogo,
-  GithubLogo,
-} from "@phosphor-icons/react";
+import { SOCIAL_MEDIA } from "@/constants/socials";
+import { Flex, Img, Box, Text, Link as ReachLink } from "@chakra-ui/react";
 import NavMenu from "./components/NavMenu";
+import { motion } from "framer-motion";
 
 export function Head() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -64,13 +50,21 @@ export function Head() {
         height="4.4rem"
         backgroundColor="black"
       >
-        <Flex marginLeft="2.2rem" align="center" color="cyan.400" gap="1.8rem">
-          <TwitterLogo size={28} />
-          <FigmaLogo size={28} />
-          <InstagramLogo size={28} />
-          <FacebookLogo size={28} />
-          <LinkedinLogo size={28} />
-          <GithubLogo size={28} />
+        <Flex marginLeft="2.2rem" align="center" gap="2.5rem">
+          {SOCIAL_MEDIA.map((social, index) => (
+            <Box as={ReachLink} href={social.url} key={index} isExternal>
+              <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 1 }}>
+                <Img
+                  height="2.8rem"
+                  borderRadius="0.8rem"
+                  src={social.icon}
+                  title={social.name}
+                  alt={social.alt}
+                  width="2.8rem"
+                />
+              </motion.div>
+            </Box>
+          ))}
         </Flex>
         <Flex
           flex="1"
