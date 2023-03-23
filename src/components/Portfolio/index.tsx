@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Link as ReachLink } from "@chakra-ui/react";
+import { Box, Flex, Text, Link as ReachLink, color } from "@chakra-ui/react";
 import PortfolioCard from "./components/PortfolioCard";
 
 export function Portfolio() {
@@ -32,6 +32,7 @@ export function Portfolio() {
           fontWeight="bold"
           href="https://github.com/MayconTrix"
           isExternal
+          _hover={{ color: "cyan.300" }}
         >
           GitHub
         </Box>
