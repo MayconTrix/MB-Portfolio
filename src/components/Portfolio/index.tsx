@@ -1,5 +1,4 @@
 import { Box, Flex, Text, Link as ReachLink } from "@chakra-ui/react";
-import Link from "next/link";
 import PortfolioCard from "./components/PortfolioCard";
 
 export function Portfolio() {

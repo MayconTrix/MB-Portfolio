@@ -6,7 +6,6 @@ export function Works() {
     <Flex
       marginTop="15rem"
       align="center"
-      // justify="center"
       height="58.8rem"
       width="100%"
       backgroundColor="black"
@@ -31,9 +30,9 @@ export function Works() {
       <Text marginTop="1.6rem" color="cyan.500" textAlign="center">
         Tenho orgulho de ter colaborado com algumas empresas incríveis:
       </Text>
-      <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 4 }} gap="36px">
+      <SimpleGrid columns={{ base: 1, sm: 1, md: 1, lg: 1 }} marginTop="4rem">
         {WORKS.map((company) => (
-          <Flex key={company.name} id={company.name} alignItems="flex-end">
+          <Flex key={company.name} id={company.name}>
             <Img
               height="12rem"
               borderRadius="0.8rem"
