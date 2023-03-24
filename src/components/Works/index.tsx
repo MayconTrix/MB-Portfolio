@@ -28,7 +28,7 @@ export function Works() {
         </Box>
       </Flex>
       <Text marginTop="1.6rem" color="cyan.500" textAlign="center">
-        Tenho orgulho de ter colaborado com algumas empresas incríveis:
+        Tenho orgulho em ter colaborado com algumas empresas incríveis:
       </Text>
       <SimpleGrid columns={{ base: 1, sm: 1, md: 1, lg: 1 }} marginTop="4rem">
         {WORKS.map((company) => (
