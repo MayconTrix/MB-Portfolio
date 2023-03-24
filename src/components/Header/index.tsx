@@ -22,7 +22,7 @@ export function Header() {
         align="center"
         justify="center"
       >
-        <Text fontSize="1.2rem" color="cyan.400">
+        <Text fontSize="1.4rem" color="cyan.400">
           {date}
         </Text>
       </Flex>

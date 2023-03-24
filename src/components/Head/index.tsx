@@ -50,7 +50,7 @@ export function Head() {
         height="4.4rem"
         backgroundColor="black"
       >
-        <SocialIcons margin="6rem" color="cyan.400" />
+        <SocialIcons margin="3rem" color="cyan.400" />
         <Flex
           flex="1"
           justify="flex-end"
@@ -62,7 +62,7 @@ export function Head() {
           <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 1 }}>
             <Img
               src="/CloudSun.svg"
-              margin="0 6rem"
+              margin="0 4rem"
               alt="Mudar para tema claro"
               title="Tema"
             />
