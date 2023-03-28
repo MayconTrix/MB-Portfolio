@@ -4,6 +4,7 @@ import PortfolioCard from "./components/PortfolioCard";
 export function Portfolio() {
   return (
     <Flex
+      id="Portfolio"
       marginTop="5rem"
       align="center"
       width="100%"

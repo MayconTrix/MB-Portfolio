@@ -20,6 +20,31 @@ export function Head() {
     };
   }, []);
 
+  const correctPosition = {
+    Home: 0,
+    About: 0,
+    Skills: 0,
+    Portfolio: 50,
+    Works: 50,
+  };
+
+  function scrollTo(id: string) {
+    console.log(id);
+    const position = findPos(document.getElementById(id));
+    // @ts-ignore
+    window.scroll(0, (position || 0) - correctPosition[id]);
+  }
+
+  function findPos(obj: any) {
+    let pos: any = 0;
+    if (obj.offsetParent) {
+      do {
+        pos += obj.offsetTop;
+      } while ((obj = obj.offsetParent));
+      return [pos];
+    }
+  }
+
   return (
     <>
       <Flex
@@ -60,8 +85,11 @@ export function Head() {
           color="cyan.400"
           gap="1.8rem"
         >
-          <NavMenu />
-          <NavMobile />
+          <NavMenu
+            scrollTo={scrollTo}
+            display={["none", "none", "none", "flex"]}
+          />
+          <NavMobile scrollTo={scrollTo} />
           <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 1 }}>
             <Img
               src="/CloudSun.svg"

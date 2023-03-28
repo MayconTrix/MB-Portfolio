@@ -4,6 +4,7 @@ import { Box, Flex, Img, SimpleGrid, Text } from "@chakra-ui/react";
 export function Works() {
   return (
     <Flex
+      id="Works"
       marginTop="15rem"
       align="center"
       height="58.8rem"
@@ -13,7 +14,7 @@ export function Works() {
       direction="column"
       gap="3rem"
     >
-      <Flex direction="column" marginBottom="2rem">
+      <Flex direction="column" margin="4rem 0 2rem">
         <Box as="text" color="cyan.700" fontSize="3.2rem" fontWeight="bold">
           Trabalhos
           <Box position="relative">
@@ -27,10 +28,10 @@ export function Works() {
           </Box>
         </Box>
       </Flex>
-      <Text marginTop="1.6rem" color="cyan.500" textAlign="center">
+      <Text marginTop="1rem" color="cyan.500" textAlign="center">
         Tenho orgulho em ter colaborado com algumas empresas incríveis:
       </Text>
-      <SimpleGrid columns={{ base: 1, sm: 1, md: 1, lg: 1 }} marginTop="4rem">
+      <SimpleGrid columns={{ base: 1, md: 1, lg: 1 }} gap="4rem">
         {WORKS.map((company) => (
           <Flex key={company.name} id={company.name}>
             <Img

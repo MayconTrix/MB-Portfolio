@@ -3,6 +3,7 @@ import { Box, Flex, Img, Text } from "@chakra-ui/react";
 export function About() {
   return (
     <Flex
+      id="About"
       marginTop="5rem"
       align="center"
       justify="center"

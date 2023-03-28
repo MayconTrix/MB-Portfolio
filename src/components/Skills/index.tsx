@@ -3,6 +3,7 @@ import { Box, Flex, Grid, Img, Link, SimpleGrid, Text } from "@chakra-ui/react";
 export function Skills() {
   return (
     <Flex
+      id="Skills"
       marginTop="5rem"
       align="center"
       justify="center"
@@ -41,7 +42,7 @@ export function Skills() {
       </Flex>
 
       <Box
-        display={{ base: "none", md: "flex", lg: "flex" }}
+        display={{ base: "none", lg: "flex" }}
         zIndex="1"
         position="relative"
       >

@@ -10,7 +10,7 @@ export function Header() {
   const date = `${day} de ${month} de ${year}`;
 
   return (
-    <Box zIndex="3" maxWidth="144rem" margin="0 auto">
+    <Box id="Home" zIndex="3" maxWidth="144rem" margin="0 auto">
       <Flex
         position="fixed"
         top="0"
