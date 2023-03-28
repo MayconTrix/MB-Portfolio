@@ -63,6 +63,7 @@ export default function PortfolioCard() {
                     as={ReachLink}
                     href={card.webHref}
                     colorScheme="cyan"
+                    fontSize="1.2rem"
                     isExternal
                   >
                     WebSite
@@ -71,8 +72,9 @@ export default function PortfolioCard() {
                 {card.gitHref && (
                   <Button
                     as={ReachLink}
-                    colorScheme="cyan"
                     href={card.gitHref}
+                    colorScheme="cyan"
+                    fontSize="1.2rem"
                     isExternal
                   >
                     GitHub
@@ -81,8 +83,9 @@ export default function PortfolioCard() {
                 {card.figmaHref && (
                   <Button
                     as={ReachLink}
-                    colorScheme="cyan"
                     href={card.figmaHref}
+                    colorScheme="cyan"
+                    fontSize="1.2rem"
                     isExternal
                   >
                     Figma
