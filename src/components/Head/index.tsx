@@ -3,6 +3,7 @@ import { Flex, Img, Box, Text } from "@chakra-ui/react";
 import NavMenu from "./components/NavMenu";
 import { motion } from "framer-motion";
 import { SocialIcons } from "./components/SocialIcons";
+import { NavMobile } from "./components/NavMobile";
 
 export function Head() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -36,6 +37,7 @@ export function Head() {
             marginLeft="14rem"
             fontSize="3.2rem"
             color="cyan.400"
+            overflow="none"
           >
             Olá, seja bem vindo, eu sou <strong>Maycon Batista</strong>
           </Text>
@@ -59,6 +61,7 @@ export function Head() {
           gap="1.8rem"
         >
           <NavMenu />
+          <NavMobile />
           <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 1 }}>
             <Img
               src="/CloudSun.svg"
