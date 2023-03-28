@@ -22,7 +22,7 @@ export function Head() {
 
   const correctPosition = {
     Home: 0,
-    About: 0,
+    About: 55,
     Skills: 0,
     Portfolio: 50,
     Works: 50,
@@ -58,11 +58,11 @@ export function Head() {
           transform={`translate3d(0px, ${0 + scrollPosition * 0.5}px, 100px)`}
         >
           <Text
-            width="100%"
-            marginLeft="14rem"
+            width={{ sm: "50rem", md: "65rem" }}
+            marginLeft={{ base: "6rem", md: "8rem", lg: "14rem" }}
             fontSize="3.2rem"
             color="cyan.400"
-            overflow="none"
+            // whiteSpace="nowrap"
           >
             Olá, seja bem vindo, eu sou <strong>Maycon Batista</strong>
           </Text>

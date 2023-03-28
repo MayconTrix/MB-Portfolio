@@ -1,4 +1,14 @@
-import { Box, Flex, Grid, Img, Link, SimpleGrid, Text } from "@chakra-ui/react";
+import { SKILLS_MEDIAS } from "@/constants/skills";
+import {
+  Box,
+  Flex,
+  Img,
+  SimpleGrid,
+  Text,
+  Link as ReachLink,
+  Link,
+} from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 export function Skills() {
   return (
@@ -55,62 +65,22 @@ export function Skills() {
           height="54.4rem"
         />
       </Box>
-      <Flex
-        zIndex="2"
-        // minWidth="82rem"
-        // minHeight="9.2rem"
-        gap="3rem"
-        borderBottom="6px solid #0BC5EA"
-      >
+      <Flex zIndex="2" gap="3rem" borderBottom="6px solid #0BC5EA">
         <SimpleGrid columns={{ base: 2, sm: 4, md: 4, lg: 8 }} gap="4rem">
-          <Img
-            src="/skills/github.svg"
-            height="8.2rem"
-            title="GitHub"
-            alt="Simbolo do GitHub"
-          />
-          <Img
-            src="/skills/figma.svg"
-            height="8.2rem"
-            title="Figma"
-            alt="Simbolo do Figma "
-          />
-          <Img
-            src="/skills/html5.svg"
-            height="8.2rem"
-            title="HTML"
-            alt="Simbolo do Html5"
-          />
-          <Img
-            src="/skills/css3.svg"
-            height="8.2rem"
-            title="CSS"
-            alt="Simbolo do CSS3"
-          />
-          <Img
-            src="/skills/javascript.svg"
-            height="8.2rem"
-            title="JavaScript"
-            alt="Simbolo do JavaScript"
-          />
-          <Img
-            src="/skills/typescript.svg"
-            height="8.2rem"
-            title="TypeScript"
-            alt="Simbolo do TypeScript"
-          />
-          <Img
-            src="/skills/react.svg"
-            height="8.2rem"
-            title="React"
-            alt="Simbolo do React"
-          />
-          <Img
-            src="/skills/nextjs.svg"
-            height="8.2rem"
-            title="NextJS"
-            alt="simbolo do react"
-          />
+          {SKILLS_MEDIAS.map((media) => (
+            <>
+              <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }}>
+                <Link href={media.url} isExternal>
+                  <Img
+                    src={media.src}
+                    height="8.2rem"
+                    title={media.title}
+                    alt={media.alt}
+                  />
+                </Link>
+              </motion.div>
+            </>
+          ))}
         </SimpleGrid>
       </Flex>
     </Flex>

@@ -1,5 +1,6 @@
 import { WORKS } from "@/constants/works";
 import { Box, Flex, Img, SimpleGrid, Text } from "@chakra-ui/react";
+import Atropos from "atropos/react";
 
 export function Works() {
   return (
@@ -14,7 +15,7 @@ export function Works() {
       direction="column"
       gap="3rem"
     >
-      <Flex direction="column" margin="4rem 0 2rem">
+      <Flex direction="column" margin="2rem 0">
         <Box as="text" color="cyan.700" fontSize="3.2rem" fontWeight="bold">
           Trabalhos
           <Box position="relative">
@@ -28,19 +29,21 @@ export function Works() {
           </Box>
         </Box>
       </Flex>
-      <Text marginTop="1rem" color="cyan.500" textAlign="center">
+      <Text color="cyan.500" textAlign="center">
         Tenho orgulho em ter colaborado com algumas empresas incríveis:
       </Text>
       <SimpleGrid columns={{ base: 1, md: 1, lg: 1 }} gap="4rem">
         {WORKS.map((company) => (
           <Flex key={company.name} id={company.name}>
-            <Img
-              height="12rem"
-              borderRadius="0.8rem"
-              src={company.logo}
-              title={company.title}
-              alt={company.alt}
-            />
+            <Atropos activeOffset={40} shadowScale={1.05}>
+              <Img
+                height="12rem"
+                borderRadius="0.8rem"
+                src={company.logo}
+                title={company.title}
+                alt={company.alt}
+              />
+            </Atropos>
           </Flex>
         ))}
       </SimpleGrid>

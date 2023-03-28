@@ -1,5 +1,7 @@
 import { Box, Flex, Img, Text } from "@chakra-ui/react";
 
+import Atropos from "atropos/react";
+
 export function About() {
   return (
     <Flex
@@ -67,26 +69,29 @@ export function About() {
         </Flex>
         <Box
           position="relative"
-          alignSelf="end"
+          alignSelf="center"
           width="30.2rem"
           height="32.6rem"
         >
-          <Img src="/Foto.png" alt="Foto de Maycon Batista usando terno" />
+          <Atropos activeOffset={40} shadowScale={1.05}>
+            <Img src="/Foto.png" alt="Foto de Maycon Batista usando terno" />
+          </Atropos>
           <Box
             background="cyan.400"
             width="60%"
+            // alignSelf="end"
             height="0.8rem"
             position="absolute"
-            bottom="-2"
-            right="-2"
+            bottom={{ base: "-6", md: "-2", lg: "-2" }}
+            right={{ base: "-120", md: "-220", lg: "-2" }}
           />
           <Box
             background="cyan.400"
             width="0.8rem"
             height="30%"
             position="absolute"
-            bottom="0"
-            right="-2"
+            bottom={{ base: "-6", md: "0", lg: "0" }}
+            right={{ base: "-120", md: "-220", lg: "-2" }}
           />
         </Box>
         <Box
