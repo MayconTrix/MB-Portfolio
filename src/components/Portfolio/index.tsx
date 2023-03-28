@@ -25,7 +25,12 @@ export function Portfolio() {
         </Box>
         <PortfolioCard />
       </Flex>
-      <Text margin="4rem 0" color="cyan.400" fontSize="2rem">
+      <Text
+        textAlign="center"
+        margin="4rem 2rem"
+        color="cyan.400"
+        fontSize="2rem"
+      >
         Para mais conteúdo sobre meus trabalhos e estudos visite o meu{" "}
         <Box
           as={ReachLink}
