@@ -9,19 +9,18 @@ export function About() {
       minHeight="58.8rem"
       width="100%"
       padding="1rem"
-      // height={"70rem"}
     >
       <Flex
         direction={{ sm: "column", lg: "row" }}
         minHeight="34.1rem"
         position="relative"
+        gap="3rem"
       >
         <Flex
           direction="column"
           alignItems="center"
           marginBottom="2rem"
           paddingLeft="2rem"
-          // gap="2rem"
         >
           <Box
             as="text"
