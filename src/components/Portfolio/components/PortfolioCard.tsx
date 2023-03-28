@@ -10,6 +10,9 @@ import {
   Box,
 } from "@chakra-ui/react";
 
+import { motion } from "framer-motion";
+import Atropos from "atropos/react";
+
 interface PortfolioCardProps {
   direction: any;
   textDirection: any;
@@ -34,15 +37,17 @@ export default function PortfolioCard() {
             padding="1rem"
             align={{ base: "center", md: "normal" }}
           >
-            <Img
-              width="32rem"
-              height="21.2rem"
-              borderRadius="0.4rem"
-              border="1px solid #0BC5EA"
-              src={card.image}
-              title={card.title}
-              alt={card.alt}
-            />
+            <Atropos activeOffset={40} shadowScale={1.05} key={index}>
+              <Img
+                width="32rem"
+                height="21rem"
+                borderRadius="0.4rem"
+                border="1px solid #0BC5EA"
+                src={card.image}
+                title={card.title}
+                alt={card.alt}
+              />
+            </Atropos>
             <Flex
               direction="column"
               margin={{ base: "2rem 0", md: "0 6rem" }}
@@ -62,39 +67,48 @@ export default function PortfolioCard() {
                 fontWeight="bold"
                 justifyContent={{ base: "start", md: card.textDirection }}
               >
-                {card.webHref && (
-                  <Button
-                    as={ReachLink}
-                    href={card.webHref}
-                    colorScheme="cyan"
-                    fontSize="1.2rem"
-                    isExternal
-                  >
-                    WebSite
-                  </Button>
-                )}
-                {card.gitHref && (
-                  <Button
-                    as={ReachLink}
-                    href={card.gitHref}
-                    colorScheme="cyan"
-                    fontSize="1.2rem"
-                    isExternal
-                  >
-                    GitHub
-                  </Button>
-                )}
-                {card.figmaHref && (
-                  <Button
-                    as={ReachLink}
-                    href={card.figmaHref}
-                    colorScheme="cyan"
-                    fontSize="1.2rem"
-                    isExternal
-                  >
-                    Figma
-                  </Button>
-                )}
+                <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }}>
+                  {card.webHref && (
+                    <Button
+                      as={ReachLink}
+                      href={card.webHref}
+                      colorScheme="cyan"
+                      fontSize="1.2rem"
+                      _hover={{ color: "cyan.900", textDecoration: "none" }}
+                      isExternal
+                    >
+                      WebSite
+                    </Button>
+                  )}
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }}>
+                  {card.gitHref && (
+                    <Button
+                      as={ReachLink}
+                      href={card.gitHref}
+                      colorScheme="cyan"
+                      fontSize="1.2rem"
+                      _hover={{ color: "cyan.900", textDecoration: "none" }}
+                      isExternal
+                    >
+                      GitHub
+                    </Button>
+                  )}
+                </motion.div>
+                <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }}>
+                  {card.figmaHref && (
+                    <Button
+                      as={ReachLink}
+                      href={card.figmaHref}
+                      colorScheme="cyan"
+                      fontSize="1.2rem"
+                      _hover={{ color: "cyan.900", textDecoration: "none" }}
+                      isExternal
+                    >
+                      Figma
+                    </Button>
+                  )}
+                </motion.div>
               </Flex>
             </Flex>
             <Box

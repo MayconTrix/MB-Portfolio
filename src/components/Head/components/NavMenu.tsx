@@ -11,16 +11,22 @@ interface NavMenuProps {
   color?: string;
   fontWeight?: string;
   scrollTo?: any;
+  display?: any;
 }
 
-export default function NavMenu({ scrollTo, color, fontWeight }: NavMenuProps) {
+export default function NavMenu({
+  scrollTo,
+  color,
+  fontWeight,
+  display,
+}: NavMenuProps) {
   return (
     <Breadcrumb
       fontWeight={fontWeight}
       color={color}
       spacing="0.8rem"
       separator="-"
-      display={["none", "none", "none", "flex"]}
+      display={display}
     >
       {NAVMENU.map((option) => (
         <BreadcrumbItem key={option.id} cursor="pointer">
