@@ -58,30 +58,36 @@ export default function PortfolioCard() {
                 fontWeight="bold"
                 justifyContent={card.textDirection}
               >
-                <Button
-                  as={ReachLink}
-                  href={card.webHref}
-                  colorScheme="cyan"
-                  isExternal
-                >
-                  WebSite
-                </Button>
-                <Button
-                  as={ReachLink}
-                  colorScheme="cyan"
-                  href={card.gitHref}
-                  isExternal
-                >
-                  GitHub
-                </Button>
-                <Button
-                  as={ReachLink}
-                  colorScheme="cyan"
-                  href={card.figmaHref}
-                  isExternal
-                >
-                  Figma
-                </Button>
+                {card.webHref && (
+                  <Button
+                    as={ReachLink}
+                    href={card.webHref}
+                    colorScheme="cyan"
+                    isExternal
+                  >
+                    WebSite
+                  </Button>
+                )}
+                {card.gitHref && (
+                  <Button
+                    as={ReachLink}
+                    colorScheme="cyan"
+                    href={card.gitHref}
+                    isExternal
+                  >
+                    GitHub
+                  </Button>
+                )}
+                {card.figmaHref && (
+                  <Button
+                    as={ReachLink}
+                    colorScheme="cyan"
+                    href={card.figmaHref}
+                    isExternal
+                  >
+                    Figma
+                  </Button>
+                )}
               </Flex>
             </Flex>
             <Box
