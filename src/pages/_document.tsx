@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="pt-br">
       <title>MB - Portfólio</title>
-      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="shortcut icon" href="/favicon.png" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
