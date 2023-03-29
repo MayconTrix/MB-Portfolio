@@ -51,7 +51,6 @@ export function Portfolio() {
         </Box>
       </Text>
       <Box
-        // position="absolute"
         bottom={{ base: "0", sm: "5", md: "-20" }}
         borderBottom="0.6rem solid #000"
         width="20%"
