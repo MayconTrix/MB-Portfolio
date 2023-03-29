@@ -84,7 +84,7 @@ export function Skills() {
       >
         <SimpleGrid columns={{ base: 2, sm: 4, md: 4, lg: 8 }} gap="4rem">
           {SKILLS_MEDIAS.map((media) => (
-            <>
+            <Box key={media.title}>
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }}>
                 <Link href={media.url} isExternal>
                   <Img
@@ -95,7 +95,7 @@ export function Skills() {
                   />
                 </Link>
               </motion.div>
-            </>
+            </Box>
           ))}
         </SimpleGrid>
       </Flex>
