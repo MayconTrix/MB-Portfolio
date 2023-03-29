@@ -40,8 +40,9 @@ export function Footer() {
       // padding="1rem"
     >
       <Flex
+        data-aos="zoom-in-up"
         direction={{ base: "column", lg: "row" }}
-        gap="10rem"
+        // gap="10rem"
         width="100%"
         marginTop="2rem"
         align="center"
