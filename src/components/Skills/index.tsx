@@ -10,7 +10,7 @@ export function Skills() {
       padding="4rem 0"
       align="center"
       justify="center"
-      minHeight="59rem"
+      minHeight="69rem"
       width="100%"
       backgroundColor="black"
       direction="column"
@@ -66,7 +66,7 @@ export function Skills() {
           bottom="-200"
           right="300"
           width="21rem"
-          height="54.4rem"
+          height="60rem"
         />
       </Box>
       <Flex

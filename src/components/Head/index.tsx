@@ -57,7 +57,7 @@ export function Head() {
         >
           <motion.div
             initial={{ y: "-50vw", opacity: 0 }}
-            transition={{ delay: 0.5 }}
+            // transition={{ delay: 0.5 }}
             animate={{ y: 0, opacity: 1 }}
           >
             <Text
@@ -81,7 +81,7 @@ export function Head() {
       >
         <motion.div
           initial={{ y: "-5vw", opacity: 0 }}
-          transition={{ delay: 1 }}
+          transition={{ delay: 0.3 }}
           animate={{ y: 10, opacity: 1 }}
         >
           <SocialIcons
@@ -99,7 +99,7 @@ export function Head() {
         >
           <motion.div
             initial={{ y: "-5vw", opacity: 0 }}
-            transition={{ delay: 1.5 }}
+            transition={{ delay: 0.6 }}
             animate={{ y: 0, opacity: 1 }}
           >
             <NavMenu
