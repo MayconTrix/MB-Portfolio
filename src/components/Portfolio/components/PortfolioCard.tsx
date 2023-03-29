@@ -59,13 +59,14 @@ export default function PortfolioCard() {
             >
               <Heading color="cyan.400">{card.title}</Heading>
               <Text
-                width="38rem"
+                maxWidth="38rem"
                 color="cyan.700"
-                margin={{ base: "2rem", md: "0" }}
+                margin={{ base: "0", md: "0" }}
                 dangerouslySetInnerHTML={{ __html: card.description }}
               />
               <Flex
                 gap="1.5rem"
+                marginTop="1rem"
                 fontWeight="bold"
                 justifyContent={{ base: "start", md: card.textDirection }}
               >
@@ -115,7 +116,7 @@ export default function PortfolioCard() {
             </Flex>
             <Box
               position="absolute"
-              bottom="-20"
+              bottom={{ base: "0", sm: "5", md: "-20" }}
               borderRadius="4px"
               borderBottom="0.4rem solid #0987A0"
               width="50%"

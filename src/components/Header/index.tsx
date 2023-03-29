@@ -17,7 +17,7 @@ export function Header() {
         zIndex="3"
         maxWidth="144rem"
         width="100%"
-        height="3.2rem"
+        minHeight="3.2rem"
         backgroundColor="black"
         align="center"
         justify="center"

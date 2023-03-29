@@ -1,13 +1,5 @@
 import { SKILLS_MEDIAS } from "@/constants/skills";
-import {
-  Box,
-  Flex,
-  Img,
-  SimpleGrid,
-  Text,
-  Link as ReachLink,
-  Link,
-} from "@chakra-ui/react";
+import { Box, Flex, Img, SimpleGrid, Text, Link } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 export function Skills() {
@@ -43,7 +35,7 @@ export function Skills() {
           </Box>
         </Box>
         <Text
-          data-aos="fade-left"
+          data-aos="fade-right"
           marginTop="1.6rem"
           color="cyan.500"
           textAlign="center"
