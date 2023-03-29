@@ -1,17 +1,5 @@
 export const SKILLS_MEDIAS = [
   {
-    src: "/skills/github.svg",
-    title: "GitHub",
-    alt: "Simbolo do GitHub",
-    url: "https://github.com/",
-  },
-  {
-    src: "/skills/figma.svg",
-    title: "Figma",
-    alt: "Simbolo do Figma ",
-    url: "https://www.figma.com/",
-  },
-  {
     src: "/skills/html5.svg",
     title: "HTML",
     alt: "Simbolo do Html5",
@@ -23,6 +11,7 @@ export const SKILLS_MEDIAS = [
     alt: "Simbolo do CSS3",
     url: "https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/CSS_basics",
   },
+
   {
     src: "/skills/javascript.svg",
     title: "JavaScript",
@@ -46,5 +35,17 @@ export const SKILLS_MEDIAS = [
     title: "NextJS",
     alt: "simbolo do react",
     url: "https://nextjs.org/",
+  },
+  {
+    src: "/skills/figma.svg",
+    title: "Figma",
+    alt: "Simbolo do Figma ",
+    url: "https://www.figma.com/",
+  },
+  {
+    src: "/skills/github.svg",
+    title: "GitHub",
+    alt: "Simbolo do GitHub",
+    url: "https://github.com/",
   },
 ];
