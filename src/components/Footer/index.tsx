@@ -1,5 +1,4 @@
 import { Flex, Text } from "@chakra-ui/react";
-import NavMenu from "../Head/components/NavMenu";
 import { SocialIcons } from "../Head/components/SocialIcons";
 
 export function Footer() {
@@ -30,26 +29,23 @@ export function Footer() {
   return (
     <Flex
       align="center"
-      // justify="center"
       minHeight="58.8rem"
       width="100%"
       backgroundColor="black"
       direction="column"
       justifyContent="space-around"
-      // alignItems="center"
-      // padding="1rem"
     >
       <Flex
         data-aos="zoom-in-up"
         direction={{ base: "column", lg: "row" }}
-        // gap="10rem"
         width="100%"
         marginTop="2rem"
         align="center"
         justifyContent="space-around"
+        gap={{ base: "10rem", lg: "0" }}
       >
         <Text
-          width="52rem"
+          maxWidth="52rem"
           fontSize="3.2rem"
           color="cyan.400"
           textAlign="center"
@@ -61,18 +57,12 @@ export function Footer() {
           direction="column"
           align="center"
           justify="center"
-          width={{ base: "3rem", sm: "50rem", md: "55rem" }}
+          width={{ base: "30rem", sm: "45rem", md: "45rem" }}
           height={{ base: "20rem", sm: "30rem", md: "32rem" }}
           backgroundColor="cyan.500"
           borderRadius="0.2rem"
           gap="3rem"
         >
-          <NavMenu
-            scrollTo={scrollTo}
-            display="flex"
-            color="black"
-            fontWeight="semibold"
-          />
           <SocialIcons color="black" />
         </Flex>
       </Flex>

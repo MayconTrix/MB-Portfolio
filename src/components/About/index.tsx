@@ -15,7 +15,7 @@ export function About() {
       padding="1rem"
     >
       <Flex
-        direction={{ sm: "column", lg: "row" }}
+        direction={{ base: "column", sm: "column", lg: "row" }}
         minHeight="34.1rem"
         position="relative"
         gap="3rem"
@@ -85,7 +85,11 @@ export function About() {
               transition={{ delay: 2.5 }}
               animate={{ scale: 1, opacity: 1 }}
             >
-              <Img src="/Foto.png" alt="Foto de Maycon Batista usando terno" />
+              <Img
+                width={{ base: "25rem", sm: "50rem" }}
+                src="/Foto.png"
+                alt="Foto de Maycon Batista usando terno"
+              />
             </motion.div>
           </Atropos>
           <Box
@@ -94,7 +98,7 @@ export function About() {
             height="0.8rem"
             position="absolute"
             bottom={{ base: "-6", md: "-2", lg: "-2" }}
-            right={{ base: "-120", md: "-220", lg: "-2" }}
+            right={{ base: "10", sm: "-50", md: "-220", lg: "-2" }}
           />
           <Box
             background="cyan.400"
@@ -102,7 +106,7 @@ export function About() {
             height="30%"
             position="absolute"
             bottom={{ base: "-6", md: "0", lg: "0" }}
-            right={{ base: "-120", md: "-220", lg: "-2" }}
+            right={{ base: "10", sm: "-50", md: "-220", lg: "-2" }}
           />
         </Box>
         <Box

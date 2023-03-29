@@ -48,10 +48,9 @@ export default function Home() {
 
       {isVisible && (
         <Flex
-          width="100%"
           position="fixed"
           bottom="4rem"
-          marginLeft="4rem"
+          marginLeft="3rem"
           justifyContent="start"
           zIndex={3}
           onClick={scrollToTop}

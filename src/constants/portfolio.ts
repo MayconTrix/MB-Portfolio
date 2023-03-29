@@ -1,6 +1,6 @@
 export const PORTFOLIO = [
   {
-    aos: "fade-left",
+    aos: "fade-right",
     direction: "row",
     textDirection: "start",
     image: "/portfolio/MyPortfolioCapa.png",
@@ -14,7 +14,7 @@ export const PORTFOLIO = [
       "https://www.figma.com/file/HvcpWyT1rSMKVN6cHcZ7Zo/My-Portfolio?t=PiJMLkpu4rpJly16-0",
   },
   {
-    aos: "fade-right",
+    aos: "fade-up",
     direction: "row-reverse",
     textDirection: "end",
     image: "/portfolio/SaborCuritibano.png",
@@ -27,7 +27,7 @@ export const PORTFOLIO = [
     figmaHref: "",
   },
   {
-    aos: "fade-left",
+    aos: "fade-right",
     direction: "row",
     textDirection: "start",
     image: "/portfolio/CapaRembrandtech.png",

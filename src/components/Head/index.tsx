@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Flex, Img, Box, Text } from "@chakra-ui/react";
+import { Flex, Box, Text } from "@chakra-ui/react";
 import NavMenu from "./components/NavMenu";
 import { motion } from "framer-motion";
 import { SocialIcons } from "./components/SocialIcons";
@@ -51,7 +51,6 @@ export function Head() {
         align="center"
         height="16.2rem"
         backgroundImage="/Bgheader.png"
-        padding="0 45rem 0 0"
       >
         <Box
           transform={`translate3d(0px, ${0 + scrollPosition * 0.5}px, 100px)`}
@@ -62,11 +61,10 @@ export function Head() {
             animate={{ y: 0, opacity: 1 }}
           >
             <Text
-              width={{ sm: "50rem", md: "65rem" }}
-              marginLeft={{ base: "6rem", md: "8rem", lg: "14rem" }}
-              fontSize={{ sm: "2.2rem", md: "3.2rem" }}
+              width={{ sm: "35rem", md: "65rem" }}
+              marginLeft={{ base: "2rem", md: "8rem", lg: "14rem" }}
+              fontSize={{ base: "2rem", sm: "2.2rem", md: "3.2rem" }}
               color="cyan.400"
-              whiteSpace="nowrap"
             >
               Olá, seja bem vindo, eu sou <strong>Maycon Batista</strong>
             </Text>
@@ -76,10 +74,9 @@ export function Head() {
       <Flex
         zIndex="3"
         position="sticky"
-        maxWidth="144rem"
         width="100%"
         top="3.2rem"
-        height="4.4rem"
+        minHeight="4.4rem"
         backgroundColor="black"
       >
         <motion.div
@@ -87,11 +84,14 @@ export function Head() {
           transition={{ delay: 1 }}
           animate={{ y: 10, opacity: 1 }}
         >
-          <SocialIcons margin="4rem" color="cyan.400" />
+          <SocialIcons
+            margin={{ base: "1rem", sm: "4rem", md: "6rem" }}
+            color="cyan.400"
+          />
         </motion.div>
         <Flex
           flex="1"
-          margin="0 4rem"
+          margin={{ base: "0 1rem", sm: "0 4rem", md: "0 6rem" }}
           justify="flex-end"
           align="center"
           color="cyan.400"

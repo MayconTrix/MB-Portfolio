@@ -12,7 +12,6 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   });
-  // AOS.init({ duration: 1000 });
 
   return (
     <ChakraProvider theme={theme}>
