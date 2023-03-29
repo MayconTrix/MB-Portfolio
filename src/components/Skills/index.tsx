@@ -24,7 +24,13 @@ export function Skills() {
       gap="3rem"
     >
       <Flex direction="column" alignItems="center" marginBottom="2rem">
-        <Box as="text" color="cyan.700" fontSize="3.2rem" fontWeight="bold">
+        <Box
+          data-aos="fade-down"
+          as="text"
+          color="cyan.700"
+          fontSize="3.2rem"
+          fontWeight="bold"
+        >
           Skills
           <Box position="relative">
             <Box
@@ -36,7 +42,12 @@ export function Skills() {
             />
           </Box>
         </Box>
-        <Text marginTop="1.6rem" color="cyan.500" textAlign="center">
+        <Text
+          data-aos="fade-left"
+          marginTop="1.6rem"
+          color="cyan.500"
+          textAlign="center"
+        >
           Eu tenho um <strong>pouco de experiência</strong> com estas
           tecnologias.
           <br /> Para maiores informações,{" "}
@@ -65,7 +76,12 @@ export function Skills() {
           height="54.4rem"
         />
       </Box>
-      <Flex zIndex="2" gap="3rem" borderBottom="6px solid #0BC5EA">
+      <Flex
+        data-aos="fade-up-right"
+        zIndex="2"
+        gap="3rem"
+        borderBottom="6px solid #0BC5EA"
+      >
         <SimpleGrid columns={{ base: 2, sm: 4, md: 4, lg: 8 }} gap="4rem">
           {SKILLS_MEDIAS.map((media) => (
             <>

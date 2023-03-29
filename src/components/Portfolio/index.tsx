@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Link as ReachLink, color } from "@chakra-ui/react";
+import { Box, Flex, Text, Link as ReachLink } from "@chakra-ui/react";
 import PortfolioCard from "./components/PortfolioCard";
 
 export function Portfolio() {
@@ -12,7 +12,13 @@ export function Portfolio() {
       gap="3rem"
     >
       <Flex direction="column" alignItems="center" margin="5rem 0">
-        <Box as="text" color="cyan.700" fontSize="3.2rem" fontWeight="bold">
+        <Box
+          data-aos="fade-down"
+          as="text"
+          color="cyan.700"
+          fontSize="3.2rem"
+          fontWeight="bold"
+        >
           Portfólio
           <Box position="relative">
             <Box
@@ -35,6 +41,7 @@ export function Portfolio() {
         Para mais conteúdo sobre meus trabalhos e estudos visite o meu{" "}
         <Box
           as={ReachLink}
+          data-aos="fade-up-left"
           fontWeight="bold"
           href="https://github.com/MayconTrix"
           isExternal

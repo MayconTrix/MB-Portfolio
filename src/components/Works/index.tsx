@@ -15,7 +15,7 @@ export function Works() {
       direction="column"
       gap="3rem"
     >
-      <Flex direction="column" margin="2rem 0">
+      <Flex data-aos="fade-up" direction="column" margin="2rem 0">
         <Box as="text" color="cyan.700" fontSize="3.2rem" fontWeight="bold">
           Trabalhos
           <Box position="relative">

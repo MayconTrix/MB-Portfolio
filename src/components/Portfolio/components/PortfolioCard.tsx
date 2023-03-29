@@ -14,6 +14,7 @@ import { motion } from "framer-motion";
 import Atropos from "atropos/react";
 
 interface PortfolioCardProps {
+  aos: string;
   direction: any;
   textDirection: any;
   image: string;
@@ -31,6 +32,7 @@ export default function PortfolioCard() {
       {PORTFOLIO.map((card: PortfolioCardProps, index) => (
         <Box key={index}>
           <Flex
+            data-aos={card.aos}
             position="relative"
             marginTop={{ base: "2rem", md: "6rem" }}
             direction={{ base: "column", md: card.direction }}

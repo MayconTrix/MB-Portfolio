@@ -29,7 +29,6 @@ export function Head() {
   };
 
   function scrollTo(id: string) {
-    console.log(id);
     const position = findPos(document.getElementById(id));
     // @ts-ignore
     window.scroll(0, (position || 0) - correctPosition[id]);
@@ -57,15 +56,21 @@ export function Head() {
         <Box
           transform={`translate3d(0px, ${0 + scrollPosition * 0.5}px, 100px)`}
         >
-          <Text
-            width={{ sm: "50rem", md: "65rem" }}
-            marginLeft={{ base: "6rem", md: "8rem", lg: "14rem" }}
-            fontSize="3.2rem"
-            color="cyan.400"
-            // whiteSpace="nowrap"
+          <motion.div
+            initial={{ y: "-50vw", opacity: 0 }}
+            transition={{ delay: 0.5 }}
+            animate={{ y: 0, opacity: 1 }}
           >
-            Olá, seja bem vindo, eu sou <strong>Maycon Batista</strong>
-          </Text>
+            <Text
+              width={{ sm: "50rem", md: "65rem" }}
+              marginLeft={{ base: "6rem", md: "8rem", lg: "14rem" }}
+              fontSize={{ sm: "2.2rem", md: "3.2rem" }}
+              color="cyan.400"
+              whiteSpace="nowrap"
+            >
+              Olá, seja bem vindo, eu sou <strong>Maycon Batista</strong>
+            </Text>
+          </motion.div>
         </Box>
       </Flex>
       <Flex
@@ -77,26 +82,31 @@ export function Head() {
         height="4.4rem"
         backgroundColor="black"
       >
-        <SocialIcons margin="3rem" color="cyan.400" />
+        <motion.div
+          initial={{ y: "-5vw", opacity: 0 }}
+          transition={{ delay: 1 }}
+          animate={{ y: 10, opacity: 1 }}
+        >
+          <SocialIcons margin="4rem" color="cyan.400" />
+        </motion.div>
         <Flex
           flex="1"
+          margin="0 4rem"
           justify="flex-end"
           align="center"
           color="cyan.400"
           gap="1.8rem"
         >
-          <NavMenu
-            scrollTo={scrollTo}
-            display={["none", "none", "none", "flex"]}
-          />
-          <NavMobile scrollTo={scrollTo} />
-          <motion.div whileHover={{ scale: 1.3 }} whileTap={{ scale: 1 }}>
-            <Img
-              src="/CloudSun.svg"
-              margin="0 4rem"
-              alt="Mudar para tema claro"
-              title="Tema"
+          <motion.div
+            initial={{ y: "-5vw", opacity: 0 }}
+            transition={{ delay: 1.5 }}
+            animate={{ y: 0, opacity: 1 }}
+          >
+            <NavMenu
+              scrollTo={scrollTo}
+              display={["none", "none", "none", "flex"]}
             />
+            <NavMobile scrollTo={scrollTo} />
           </motion.div>
         </Flex>
       </Flex>
