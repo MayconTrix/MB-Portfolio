@@ -98,7 +98,7 @@ export function About() {
             height="0.8rem"
             position="absolute"
             bottom={{ base: "-6", md: "-2", lg: "-2" }}
-            right={{ base: "10", sm: "-50", md: "-220", lg: "-2" }}
+            right={{ base: "-10", sm: "-50", md: "-220", lg: "-2" }}
           />
           <Box
             background="cyan.400"
@@ -106,7 +106,7 @@ export function About() {
             height="30%"
             position="absolute"
             bottom={{ base: "-6", md: "0", lg: "0" }}
-            right={{ base: "10", sm: "-50", md: "-220", lg: "-2" }}
+            right={{ base: "-10", sm: "-50", md: "-220", lg: "-2" }}
           />
         </Box>
         <Box
