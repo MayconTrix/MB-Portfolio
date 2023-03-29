@@ -6,10 +6,11 @@ export function Skills() {
   return (
     <Flex
       id="Skills"
-      marginTop="5rem"
+      margin="5rem 0"
+      padding="4rem 0"
       align="center"
       justify="center"
-      height="59rem"
+      minHeight="59rem"
       width="100%"
       backgroundColor="black"
       direction="column"

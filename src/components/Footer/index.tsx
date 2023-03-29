@@ -57,8 +57,8 @@ export function Footer() {
           direction="column"
           align="center"
           justify="center"
-          width={{ base: "30rem", sm: "45rem", md: "45rem" }}
-          height={{ base: "20rem", sm: "30rem", md: "32rem" }}
+          width={{ base: "30rem", sm: "45rem", md: "55rem" }}
+          height={{ base: "30rem", sm: "30rem", md: "32rem" }}
           backgroundColor="cyan.500"
           borderRadius="0.2rem"
           gap="3rem"
