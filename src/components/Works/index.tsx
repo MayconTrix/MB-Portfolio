@@ -29,7 +29,7 @@ export function Works() {
           </Box>
         </Box>
       </Flex>
-      <Text color="cyan.500" textAlign="center">
+      <Text data-aos="zoom-in" color="cyan.500" textAlign="center">
         Tenho orgulho em ter colaborado com algumas empresas incríveis:
       </Text>
       <SimpleGrid columns={{ base: 1, md: 1, lg: 1 }} gap="4rem">
@@ -37,6 +37,7 @@ export function Works() {
           <Flex key={company.name} id={company.name}>
             <Atropos activeOffset={40} shadowScale={1.05}>
               <Img
+                data-aos="flip-down"
                 height="12rem"
                 borderRadius="0.8rem"
                 src={company.logo}
