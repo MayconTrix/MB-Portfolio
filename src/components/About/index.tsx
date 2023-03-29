@@ -22,7 +22,7 @@ export function About() {
       >
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
-          transition={{ delay: 2 }}
+          transition={{ delay: 0.9 }}
           animate={{ scale: 1, opacity: 1 }}
         >
           <Flex
@@ -58,9 +58,7 @@ export function About() {
               <strong>- Desde</strong> muito novo, amante de tecnologias e jogos
               (vídeo game, computador e arcades), procurei seguir por este
               caminho, da tecnologia, trabalhando por um bom tempo como autônomo
-              dando suporte em TI. (Hardware e Software). Passei por outros
-              trabalhos que não gostei muito como freelancer, após algum tempo
-              acabei voltando para a área de TI.
+              dando suporte em TI. (Hardware e Software).
               <br />
               <br />
               <strong>- Com</strong> a pandemia consegui encontrar mais tempo em
@@ -68,8 +66,8 @@ export function About() {
               oportunidade, assim me tornando um Trainee - Front-end / UI Design
               da Rembrandtech, aproveitando esta oportunidade decidi estudar
               mais a fundo e junto a isso fazer uma transição de carreira, me
-              dedicando somente a programação, Hoje atuo como Front-end / UI
-              Design | Júnior na mesma.
+              dedicando somente a programação, Hoje busco um novo desafio para
+              avançar ainda mais na minha carreira.
             </Text>
           </Flex>
         </motion.div>
@@ -82,7 +80,7 @@ export function About() {
           <Atropos activeOffset={40} shadowScale={1.05}>
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
-              transition={{ delay: 2.5 }}
+              transition={{ delay: 1.4 }}
               animate={{ scale: 1, opacity: 1 }}
             >
               <Img
@@ -112,7 +110,7 @@ export function About() {
         <Box
           background="cyan.400"
           width="0.8rem"
-          height="30%"
+          height={{ base: "10%", sm: "10%", md: "10%", lg: "30%" }}
           position="absolute"
           top="0"
           left="0"
