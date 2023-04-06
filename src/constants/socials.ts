@@ -9,7 +9,7 @@ export const SOCIAL_MEDIA = [
     alt: "Figma",
     name: "Figma Logo",
     icon: "/icons/figma-logo.svg",
-    url: "https://www.figma.com/files/team/1202625884338087146/My-Projects?fuid=1146523709759227520",
+    url: "https://www.figma.com",
   },
   {
     alt: "Github",

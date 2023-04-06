@@ -43,9 +43,12 @@ export function Portfolio() {
           as={ReachLink}
           data-aos="fade-up-left"
           fontWeight="bold"
+          fontSize="2rem"
+          color="cyan.200"
           href="https://github.com/MayconTrix"
           isExternal
-          _hover={{ color: "cyan.300" }}
+          textDecoration="underline"
+          _hover={{ color: "cyan.500" }}
         >
           GitHub
         </Box>
