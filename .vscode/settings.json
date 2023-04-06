@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["Maycon", "Rembrandtech"]
+  "cSpell.words": ["Maycon", "Rembrandtech"],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
