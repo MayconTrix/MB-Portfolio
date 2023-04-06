@@ -27,10 +27,7 @@ export function SocialIcons({ color, margin }: SocialIconsProps) {
         whileHover={{ scale: 1.3, color: "#76E4F7" }}
         whileTap={{ scale: 1 }}
       >
-        <Link
-          href="https://www.figma.com/files/team/1202625884338087146/My-Projects?fuid=1146523709759227520"
-          isExternal
-        >
+        <Link href="https://www.figma.com/" isExternal>
           <FigmaLogo size={28} />
         </Link>
       </motion.div>

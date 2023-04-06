@@ -46,9 +46,12 @@ export function Skills() {
           <br /> Para maiores informações,{" "}
           <Link
             fontWeight="bold"
-            fontSize="1.8rem"
+            fontSize="2rem"
+            color="cyan.200"
             href="https://flowcv.com/resume/sssput1so9"
             isExternal
+            textDecoration="underline"
+            _hover={{ color: "cyan.500" }}
           >
             Curriculum Vitae
           </Link>
