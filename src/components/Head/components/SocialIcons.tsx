@@ -1,4 +1,4 @@
-import { Flex, Link } from "@chakra-ui/react";
+import { Flex, Link, BoxProps } from "@chakra-ui/react";
 import {
   FigmaLogo,
   GithubLogo,
@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 interface SocialIconsProps {
   color: string;
-  margin?: any;
+  margin?: BoxProps["margin"] | undefined;
 }
 
 export function SocialIcons({ color, margin }: SocialIconsProps) {

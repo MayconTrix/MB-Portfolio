@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 import { SocialIcons } from "./components/SocialIcons";
 import { NavMobile } from "./components/NavMobile";
 
+type CorrectPosition = {
+  [key: string]: number;
+};
+
 export function Head() {
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -26,22 +30,24 @@ export function Head() {
     Skills: 0,
     Portfolio: 50,
     Works: 50,
-  };
+  } as { [key: string]: number };
 
-  function scrollTo(id: string) {
-    const position = findPos(document.getElementById(id));
-    // @ts-ignore
-    window.scroll(0, (position || 0) - correctPosition[id]);
+  function scrollTo(id: string | number) {
+    const element = document.getElementById(id.toString());
+    if (element) {
+      const position = findPos(element);
+      window.scroll(0, (position ?? 0) - correctPosition[id]);
+    }
   }
 
-  function findPos(obj: any) {
-    let pos: any = 0;
-    if (obj.offsetParent) {
-      do {
-        pos += obj.offsetTop;
-      } while ((obj = obj.offsetParent));
-      return [pos];
+  function findPos(obj: HTMLElement | null): number {
+    let pos: number = 0;
+    let currentObj = obj;
+    while (currentObj?.offsetParent) {
+      pos += currentObj.offsetTop;
+      currentObj = currentObj.offsetParent as HTMLElement;
     }
+    return pos;
   }
 
   return (

@@ -10,8 +10,8 @@ import { motion } from "framer-motion";
 interface NavMenuProps {
   color?: string;
   fontWeight?: string;
-  scrollTo?: any;
-  display?: any;
+  scrollTo?: (id: string) => void;
+  display?: string[];
 }
 
 export default function NavMenu({
@@ -34,7 +34,7 @@ export default function NavMenu({
             <Flex
               as={ReachLink}
               title={option.name}
-              onClick={() => scrollTo(option.id)}
+              onClick={() => scrollTo?.(option.id)}
               _hover={{
                 color: "cyan.300",
                 textDecoration: "none",

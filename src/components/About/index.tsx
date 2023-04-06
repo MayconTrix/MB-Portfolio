@@ -57,7 +57,7 @@ export function About() {
             >
               <strong>- Desde</strong> muito novo, amante de tecnologias e jogos
               (vídeo game, computador e arcades), procurei seguir por este
-              caminho, da tecnologia, trabalhando por um bom tempo como autônomo
+              caminho da tecnologia, trabalhando por um bom tempo como autônomo
               dando suporte em TI. (Hardware e Software).
               <br />
               <br />

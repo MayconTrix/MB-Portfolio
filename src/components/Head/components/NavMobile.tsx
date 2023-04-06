@@ -15,7 +15,11 @@ import { motion } from "framer-motion";
 import { NAVMENU } from "@/constants/menu";
 import { List } from "@phosphor-icons/react";
 
-export function NavMobile({ scrollTo }: any) {
+type NavMobileProps = {
+  scrollTo: (id: string) => void;
+};
+
+export function NavMobile({ scrollTo }: NavMobileProps) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef(null);
 
