@@ -7,7 +7,7 @@ export const PORTFOLIO = [
     title: "Portfólio Maycon Batista",
     alt: "Imagem de uma previa do site",
     description: `Este portfólio foi criado para critérios de aprendizado e uma breve demonstração dos meus conhecimentos.<br /><br />
-      <b>Ferramentas:</b> Figma, NextJS e ChrakraUI`,
+      <b>Ferramentas:</b> Figma, React, NextJS e ChrakraUI`,
     webHref: "",
     gitHref: "https://github.com/MayconTrix/MB-Portfolio",
     figmaHref:
@@ -34,7 +34,7 @@ export const PORTFOLIO = [
     title: "RembrandTech WebSite",
     alt: "Imagem de uma previa do site",
     description: `Projeto criado e desenvolvido para a empresa RembrandtTech, feito toda a parte de UI e Front-end.<br /><br />
-      <b>Ferramentas:</b> Figma, NextJS e ChrakraUI`,
+      <b>Ferramentas:</b> Figma, React, NextJS e ChrakraUI`,
     webHref: "",
     gitHref: "",
     figmaHref:
