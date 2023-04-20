@@ -29,7 +29,12 @@ export function Works() {
           </Box>
         </Box>
       </Flex>
-      <Text data-aos="zoom-in" color="cyan.500" textAlign="center">
+      <Text
+        data-aos="zoom-in"
+        color="cyan.500"
+        textAlign="center"
+        fontSize="1.8rem"
+      >
         Tenho orgulho em ter colaborado com algumas empresas incríveis:
       </Text>
       <SimpleGrid columns={{ base: 1, md: 1, lg: 1 }} gap="4rem">
