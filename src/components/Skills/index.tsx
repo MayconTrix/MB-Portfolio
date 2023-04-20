@@ -40,9 +40,9 @@ export function Skills() {
           marginTop="1.6rem"
           color="cyan.500"
           textAlign="center"
+          fontSize="1.8rem"
         >
-          Eu tenho um <strong>pouco de experiência</strong> com estas
-          tecnologias.
+          Eu tenho <strong>experiência</strong> com estas tecnologias.
           <br /> Para maiores informações,{" "}
           <Link
             fontWeight="bold"

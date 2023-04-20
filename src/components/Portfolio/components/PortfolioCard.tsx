@@ -76,7 +76,7 @@ export default function PortfolioCard() {
                       as={ReachLink}
                       href={card.webHref}
                       colorScheme="cyan"
-                      fontSize="1.2rem"
+                      fontSize="1.4rem"
                       _hover={{ color: "cyan.900", textDecoration: "none" }}
                       isExternal
                     >
@@ -90,7 +90,7 @@ export default function PortfolioCard() {
                       as={ReachLink}
                       href={card.gitHref}
                       colorScheme="cyan"
-                      fontSize="1.2rem"
+                      fontSize="1.4rem"
                       _hover={{ color: "cyan.900", textDecoration: "none" }}
                       isExternal
                     >
@@ -104,7 +104,7 @@ export default function PortfolioCard() {
                       as={ReachLink}
                       href={card.figmaHref}
                       colorScheme="cyan"
-                      fontSize="1.2rem"
+                      fontSize="1.4rem"
                       _hover={{ color: "cyan.900", textDecoration: "none" }}
                       isExternal
                     >

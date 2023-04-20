@@ -52,7 +52,7 @@ export function About() {
               maxWidth="66rem"
               color="cyan.500"
               lineHeight="160%"
-              fontSize="1.6rem"
+              fontSize="1.8rem"
               padding="1.2rem"
             >
               <strong>- Desde</strong> muito novo, amante de tecnologias e jogos
