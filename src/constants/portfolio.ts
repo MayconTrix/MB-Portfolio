@@ -24,7 +24,8 @@ export const PORTFOLIO = [
     <b>Ferramentas:</b> HTML, CSS & JavaScript`,
     webHref: "https://web-restaurant-one.vercel.app/",
     gitHref: "https://github.com/MayconTrix/Restaurant-Website",
-    figmaHref: "",
+    figmaHref:
+      "https://www.figma.com/file/6vHT7HLAgJrjxmHu1HkG0L/Sabor-Curitibano?type=design&node-id=0%3A1&t=DiDyORDsCnP23OuE-1",
   },
   {
     aos: "fade-right",
