@@ -21,7 +21,7 @@ export const PORTFOLIO = [
     title: "Restaurante Sabor Curitibano",
     alt: "Imagem de uma previa do site",
     description: `Projeto criado inicialmente para estudos e compreensão, aprimorando ainda mais meus conhecimentos obtidos nos cursos.<br /><br />
-    <b>Ferramentas:</b> HTML, CSS & JavaScript`,
+    <b>Ferramentas:</b> Figma, HTML, CSS & JavaScript`,
     webHref: "https://web-restaurant-one.vercel.app/",
     gitHref: "https://github.com/MayconTrix/Restaurant-Website",
     figmaHref:
