@@ -48,6 +48,7 @@ export function Works() {
                 src={company.logo}
                 title={company.title}
                 alt={company.alt}
+                loading="lazy"
               />
             </Atropos>
           </Flex>

@@ -1,10 +1,5 @@
 import { NAVMENU } from "@/constants/menu";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  Flex,
-  Link as ReachLink,
-} from "@chakra-ui/react";
+import { Box, Breadcrumb, BreadcrumbItem, Link } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 interface NavMenuProps {
@@ -31,8 +26,8 @@ export default function NavMenu({
       {NAVMENU.map((option) => (
         <BreadcrumbItem key={option.id} cursor="pointer">
           <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }}>
-            <Flex
-              as={ReachLink}
+            <Box
+              // as={ReachLink}
               title={option.name}
               onClick={() => scrollTo?.(option.id)}
               _hover={{
@@ -42,7 +37,7 @@ export default function NavMenu({
               cursor="pointer"
             >
               {option.name}
-            </Flex>
+            </Box>
           </motion.div>
         </BreadcrumbItem>
       ))}

@@ -48,6 +48,7 @@ export default function PortfolioCard() {
                 src={card.image}
                 title={card.title}
                 alt={card.alt}
+                loading="lazy"
               />
             </Atropos>
             <Flex
