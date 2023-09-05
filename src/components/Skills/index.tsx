@@ -88,6 +88,7 @@ export function Skills() {
                     height="8.2rem"
                     title={media.title}
                     alt={media.alt}
+                    loading="lazy"
                   />
                 </Link>
               </motion.div>

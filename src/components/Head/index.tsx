@@ -61,20 +61,20 @@ export function Head() {
         <Box
           transform={`translate3d(0px, ${0 + scrollPosition * 0.5}px, 100px)`}
         >
-          <motion.div
+          {/* <motion.div
             initial={{ y: "-50vw", opacity: 0 }}
             // transition={{ delay: 0.5 }}
             animate={{ y: 0, opacity: 1 }}
+          > */}
+          <Text
+            width={{ sm: "35rem", md: "65rem" }}
+            marginLeft={{ base: "2rem", md: "8rem", lg: "14rem" }}
+            fontSize={{ base: "2rem", sm: "2.2rem", md: "3.2rem" }}
+            color="cyan.400"
           >
-            <Text
-              width={{ sm: "35rem", md: "65rem" }}
-              marginLeft={{ base: "2rem", md: "8rem", lg: "14rem" }}
-              fontSize={{ base: "2rem", sm: "2.2rem", md: "3.2rem" }}
-              color="cyan.400"
-            >
-              Olá, seja bem vindo, eu sou <strong>Maycon Batista</strong>
-            </Text>
-          </motion.div>
+            Olá, seja bem vindo, eu sou <strong>Maycon Batista</strong>
+          </Text>
+          {/* </motion.div> */}
         </Box>
       </Flex>
       <Flex
@@ -85,16 +85,16 @@ export function Head() {
         minHeight="4.4rem"
         backgroundColor="black"
       >
-        <motion.div
+        {/* <motion.div
           initial={{ y: "-5vw", opacity: 0 }}
           transition={{ delay: 0.3 }}
           animate={{ y: 10, opacity: 1 }}
-        >
-          <SocialIcons
-            margin={{ base: "1rem", sm: "4rem", md: "6rem" }}
-            color="cyan.400"
-          />
-        </motion.div>
+        > */}
+        <SocialIcons
+          margin={{ base: "1rem", sm: "4rem", md: "6rem" }}
+          color="cyan.400"
+        />
+        {/* </motion.div> */}
         <Flex
           flex="1"
           margin={{ base: "0 1rem", sm: "0 4rem", md: "0 6rem" }}
@@ -103,17 +103,17 @@ export function Head() {
           color="cyan.400"
           gap="1.8rem"
         >
-          <motion.div
+          {/* <motion.div
             initial={{ y: "-5vw", opacity: 0 }}
             transition={{ delay: 0.6 }}
             animate={{ y: 0, opacity: 1 }}
-          >
-            <NavMenu
-              scrollTo={scrollTo}
-              display={["none", "none", "none", "flex"]}
-            />
-            <NavMobile scrollTo={scrollTo} />
-          </motion.div>
+          > */}
+          <NavMenu
+            scrollTo={scrollTo}
+            display={["none", "none", "none", "flex"]}
+          />
+          <NavMobile scrollTo={scrollTo} />
+          {/* </motion.div> */}
         </Flex>
       </Flex>
     </>

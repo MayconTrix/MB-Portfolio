@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { format } from "date-fns";
 import { ptBR } from "date-fns/locale";

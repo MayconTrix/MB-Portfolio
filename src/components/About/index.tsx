@@ -22,7 +22,7 @@ export function About() {
       >
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
-          transition={{ delay: 0.9 }}
+          transition={{ delay: 0.4 }}
           animate={{ scale: 1, opacity: 1 }}
         >
           <Flex
@@ -80,7 +80,7 @@ export function About() {
           <Atropos activeOffset={40} shadowScale={1.05}>
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
-              transition={{ delay: 1.4 }}
+              transition={{ delay: 0.9 }}
               animate={{ scale: 1, opacity: 1 }}
             >
               <Img
