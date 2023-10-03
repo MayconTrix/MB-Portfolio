@@ -78,7 +78,7 @@ export function Skills() {
         gap="3rem"
         borderBottom="6px solid #0BC5EA"
       >
-        <SimpleGrid columns={{ base: 2, sm: 4, md: 4, lg: 8 }} gap="4rem">
+        <SimpleGrid columns={{ base: 2, sm: 4, md: 4, lg: 9 }} gap="4rem">
           {SKILLS_MEDIAS.map((media) => (
             <Box key={media.title}>
               <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }}>
@@ -86,6 +86,7 @@ export function Skills() {
                   <Img
                     src={media.src}
                     height="8.2rem"
+                    width="7.2rem"
                     title={media.title}
                     alt={media.alt}
                     loading="lazy"

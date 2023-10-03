@@ -1,6 +1,32 @@
 export const PORTFOLIO = [
   {
+    aos: "fade-up",
+    direction: "row",
+    textDirection: "start",
+    image: "/portfolio/CapaFBS.png",
+    title: "Friesen Braun Soluções",
+    alt: "Imagem de uma previa do site",
+    description: `Projeto criado e desenvolvido para a empresa FriesenBraun Soluçoes, feito toda a parte de DesignUI/UX e Front-end.<br /><br />
+      <b>Ferramentas:</b> Figma, React, NextJS, TypeScript e ChakraUI`,
+    webHref: "https://www.friesenbraun.com.br/",
+    gitHref: "",
+    figmaHref: "",
+  },
+  {
     aos: "fade-right",
+    direction: "row-reverse",
+    textDirection: "start",
+    image: "/portfolio/CapaNXC.png",
+    title: "NoxCode",
+    alt: "Imagem de uma previa do site",
+    description: `Projeto criado e desenvolvido para a empresa NoxCode, feito toda a parte de DesignUI/UX e Front-end.<br /><br />
+      <b>Ferramentas:</b> Figma, React, NextJS, TypeScript e Tailwind`,
+    webHref: "https://www.noxcode.com.br/",
+    gitHref: "",
+    figmaHref: "",
+  },
+  {
+    aos: "fade-up",
     direction: "row",
     textDirection: "start",
     image: "/portfolio/MyPortfolioCapa.png",
@@ -14,7 +40,7 @@ export const PORTFOLIO = [
       "https://www.figma.com/file/HvcpWyT1rSMKVN6cHcZ7Zo/My-Portfolio?t=PiJMLkpu4rpJly16-0",
   },
   {
-    aos: "fade-up",
+    aos: "fade-right",
     direction: "row-reverse",
     textDirection: "end",
     image: "/portfolio/SaborCuritibano.png",
@@ -26,19 +52,5 @@ export const PORTFOLIO = [
     gitHref: "https://github.com/MayconTrix/Restaurant-Website",
     figmaHref:
       "https://www.figma.com/file/6vHT7HLAgJrjxmHu1HkG0L/Sabor-Curitibano?type=design&node-id=0%3A1&t=DiDyORDsCnP23OuE-1",
-  },
-  {
-    aos: "fade-right",
-    direction: "row",
-    textDirection: "start",
-    image: "/portfolio/CapaRembrandtech.png",
-    title: "RembrandTech WebSite",
-    alt: "Imagem de uma previa do site",
-    description: `Projeto criado e desenvolvido para a empresa RembrandtTech, feito toda a parte de UI e Front-end.<br /><br />
-      <b>Ferramentas:</b> Figma, React, NextJS, TypeScript e ChakraUI`,
-    webHref: "",
-    gitHref: "",
-    figmaHref:
-      "https://www.figma.com/file/CYd0xe7dnmgAjgGObuMwN9/Rembrandt-Design-System?node-id=0-1&t=fsjLtx5BiIYwUlwf-0",
   },
 ];
