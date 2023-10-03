@@ -63,11 +63,11 @@ export function About() {
               <br />
               <strong>- Com</strong> a pandemia consegui encontrar mais tempo em
               casa e resolvi estudar programação, onde me deparei com uma grande
-              oportunidade, assim me tornando um Trainee - Front-end / UI Design
-              da Rembrandtech, aproveitando esta oportunidade decidi estudar
-              mais a fundo e junto a isso fazer uma transição de carreira, me
-              dedicando somente a programação, Hoje busco um novo desafio para
-              avançar ainda mais na minha carreira.
+              oportunidade, assim me tornando um Trainee - Front-end / UI/UX
+              Design da Rembrandtech, aproveitando esta oportunidade decidi
+              estudar mais a fundo e junto a isso fazer uma transição de
+              carreira, me dedicando somente a programação, Hoje busco um novo
+              desafio para avançar ainda mais na minha carreira.
             </Text>
           </Flex>
         </motion.div>

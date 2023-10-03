@@ -48,4 +48,10 @@ export const SKILLS_MEDIAS = [
     alt: "Simbolo do GitHub",
     url: "https://github.com/",
   },
+  {
+    src: "/skills/tailwind.svg",
+    title: "Tailwindcss",
+    alt: "Simbolo do Tailwind",
+    url: "https://tailwindcss.com/",
+  },
 ];
