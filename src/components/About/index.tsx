@@ -52,22 +52,21 @@ export function About() {
               maxWidth="66rem"
               color="cyan.500"
               lineHeight="160%"
-              fontSize="1.8rem"
+              fontSize="1.7rem"
               padding="1.2rem"
             >
-              <strong>- Desde</strong> muito novo, amante de tecnologias e jogos
-              (vídeo game, computador e arcades), procurei seguir por este
-              caminho da tecnologia, trabalhando por um bom tempo como autônomo
-              dando suporte em TI. (Hardware e Software).
+              <strong>- Desde</strong> a infância, apaixonado por tecnologia e
+              jogos, busquei trilhar um caminho nesse campo, trabalhando como
+              autônomo por um período significativo, oferecendo suporte em TI,
+              tanto em hardware quanto em software.
               <br />
               <br />
-              <strong>- Com</strong> a pandemia consegui encontrar mais tempo em
-              casa e resolvi estudar programação, onde me deparei com uma grande
-              oportunidade, assim me tornando um Trainee - Front-end / UI/UX
-              Design da Rembrandtech, aproveitando esta oportunidade decidi
-              estudar mais a fundo e junto a isso fazer uma transição de
-              carreira, me dedicando somente a programação, Hoje busco um novo
-              desafio para avançar ainda mais na minha carreira.
+              <strong>- Durante</strong> a pandemia, aproveitei o tempo
+              disponível para me aprofundar nos estudos de programação, onde me
+              deparei com uma grande oportunidade de ingressar como membro
+              Front-end/UI Designer na Rembrandtech. Esta experiência me
+              incentivou a realizar uma transição de carreira, dedicando-me
+              ainda mais para me desenvolver como programador e designer.
             </Text>
           </Flex>
         </motion.div>
