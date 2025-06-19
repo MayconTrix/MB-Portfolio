@@ -6,7 +6,7 @@ export const PORTFOLIO = [
     image: "/portfolio/CapaFBS.png",
     title: "Friesen Braun Soluções",
     alt: "Imagem de uma previa do site",
-    description: `Projeto criado e desenvolvido para a empresa FriesenBraun Soluçoes, feito toda a parte de DesignUI/UX e Front-end.<br /><br />
+    description: `Projeto criado e desenvolvido para a empresa FriesenBraun Soluções, feito toda a parte de DesignUI/UX e Front-end.<br /><br />
       <b>Ferramentas:</b> Figma, React, NextJS, TypeScript e ChakraUI`,
     webHref: "https://www.friesenbraun.com.br/",
     gitHref: "",
