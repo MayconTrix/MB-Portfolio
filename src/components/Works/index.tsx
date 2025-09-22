@@ -1,5 +1,5 @@
 import { WORKS } from "@/constants/works";
-import { Box, Flex, Img, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Flex, Img, Text } from "@chakra-ui/react";
 import Atropos from "atropos/react";
 import Link from "next/link";
 
@@ -12,7 +12,7 @@ export function Works() {
       height="58.8rem"
       width="100%"
       backgroundColor="black"
-      bgGradient="linear(159.8deg, gray.900 49.8%, black 50%)"
+      bgGradient={"linear(159.8deg, gray.900 49.8%, black 50%)" as string}
       direction="column"
       gap="3rem"
     >
@@ -38,11 +38,11 @@ export function Works() {
       >
         Tenho orgulho em ter colaborado com algumas empresas incríveis:
       </Text>
-      <SimpleGrid columns={{ base: 2, md: 2, lg: 2 }} gap="4rem">
+      <Flex justify="center" flexWrap="wrap" gap="4rem">
         {WORKS.map((company) => (
           <Flex key={company.name} id={company.name}>
-            <Atropos activeOffset={40} shadowScale={1.05}>
-              <Link href={company.url} target="_blank">
+            <Link href={company.url} target="_blank">
+              <Atropos activeOffset={40} shadowScale={1.05}>
                 <Img
                   data-aos="flip-down"
                   height="12rem"
@@ -52,11 +52,11 @@ export function Works() {
                   alt={company.alt}
                   loading="lazy"
                 />
-              </Link>
-            </Atropos>
+              </Atropos>
+            </Link>
           </Flex>
         ))}
-      </SimpleGrid>
+      </Flex>
     </Flex>
   );
 }

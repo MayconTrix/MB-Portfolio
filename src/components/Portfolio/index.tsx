@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Link as ReachLink } from "@chakra-ui/react";
+import { Box, Flex, Link as ReachLink, Text } from "@chakra-ui/react";
 import PortfolioCard from "./components/PortfolioCard";
 
 export function Portfolio() {
@@ -10,6 +10,7 @@ export function Portfolio() {
       width="100%"
       direction="column"
       gap="3rem"
+      overflow="hidden"
     >
       <Flex direction="column" alignItems="center" margin="5rem 0">
         <Box
