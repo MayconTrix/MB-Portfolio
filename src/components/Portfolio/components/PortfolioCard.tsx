@@ -1,17 +1,16 @@
-import React from "react";
 import { PORTFOLIO } from "@/constants/portfolio";
 import {
-  Flex,
-  Img,
-  Text,
-  Heading,
-  Button,
-  Link as ReachLink,
   Box,
+  Button,
+  Flex,
+  Heading,
+  Img,
+  Link as ReachLink,
+  Text,
 } from "@chakra-ui/react";
 
-import { motion } from "framer-motion";
 import Atropos from "atropos/react";
+import { motion } from "framer-motion";
 
 interface PortfolioCardProps {
   aos: string;
@@ -30,7 +29,7 @@ export default function PortfolioCard() {
   return (
     <>
       {PORTFOLIO.map((card: PortfolioCardProps, index) => (
-        <Box key={index}>
+        <Box key={index} marginTop="2rem">
           <Flex
             data-aos={card.aos}
             position="relative"
@@ -58,7 +57,7 @@ export default function PortfolioCard() {
               textAlign={{ base: "center", md: card.textDirection }}
               align={{ base: "center", md: "normal" }}
             >
-              <Heading color="cyan.400">{card.title}</Heading>
+              <Heading color="cyan.400" marginBottom="1rem">{card.title}</Heading>
               <Text
                 maxWidth="38rem"
                 color="cyan.700"

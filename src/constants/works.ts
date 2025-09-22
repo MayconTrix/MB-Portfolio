@@ -6,7 +6,16 @@ export const WORKS = [
     url: "https://www.noxcode.com.br/",
     logo: "/works/NXCLogo.png",
     title: "Empresa RembrandTech",
-    alt: "Imagem de uma triforce, dois triângulos em baixo e um em cima formando um triangulo maior, com um escudo atrás, e o nome da empresa logo a baixo ",
+    alt: "Imagem de uma triforce, dois triângulos em baixo e um em cima formando um triangulo maior, com um escudo atrás, e o nome da empresa logo a baixo.",
+  },
+  {
+    name: "Ombrelone",
+    description: "E-commerce digital",
+    date: "2024",
+    url: "https://app.ombrelone.com/",
+    logo: "/works/OmbreloneLogo.png",
+    title: "Empresa Ombrelone",
+    alt: "Imagem de uma logo da empresa Ombrelone.",
   },
   {
     name: "RembrandTech",
@@ -15,6 +24,6 @@ export const WORKS = [
     url: "https://www.linkedin.com/company/rembrandtech",
     logo: "/works/RTechLogo.png",
     title: "Empresa RembrandTech",
-    alt: "Imagem de uma capivara segurando uma copo de café, e o nome da empresa logo a baixo ",
+    alt: "Imagem de uma capivara segurando uma copo de café, e o nome da empresa logo a baixo.",
   },
 ];

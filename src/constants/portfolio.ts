@@ -1,6 +1,32 @@
 export const PORTFOLIO = [
   {
-    aos: "fade-up",
+    aos: "fade-left",
+    direction: "row",
+    textDirection: "start",
+    image: "/portfolio/CarolineCapa.png",
+    title: "Caroline Marchiore Beaty",
+    alt: "Imagem de uma previa do site",
+    description: `Projeto criado e desenvolvido para a Caroline Marchiore Beaty, feito toda a parte de DesignUI/UX e Front-end.<br /><br />
+      <b>Ferramentas:</b> Figma, React, NextJS, TypeScript e Tailwind`,
+    webHref: "https://www.carolinemarchiore.de/",
+    gitHref: "",
+    figmaHref: "",
+  },
+  {
+    aos: "fade-right",
+    direction: "row-reverse",
+    textDirection: "start",
+    image: "/portfolio/CapaHTA.png",
+    title: "Hélio Tavares Advogados",
+    alt: "Imagem de uma previa do site",
+    description: `Projeto criado e desenvolvido para a empresa Hélio Tavares Advogados, feito toda a parte de DesignUI/UX e Front-end.<br /><br />
+      <b>Ferramentas:</b> Figma, React, NextJS, TypeScript e Tailwind`,
+    webHref: "https://www.htadv.com/",
+    gitHref: "",
+    figmaHref: "",
+  },
+  {
+    aos: "fade-left",
     direction: "row",
     textDirection: "start",
     image: "/portfolio/CapaFBS.png",
@@ -26,7 +52,7 @@ export const PORTFOLIO = [
     figmaHref: "",
   },
   {
-    aos: "fade-up",
+    aos: "fade-left",
     direction: "row",
     textDirection: "start",
     image: "/portfolio/MyPortfolioCapa.png",
@@ -42,7 +68,7 @@ export const PORTFOLIO = [
   {
     aos: "fade-right",
     direction: "row-reverse",
-    textDirection: "end",
+    textDirection: "start",
     image: "/portfolio/SaborCuritibano.png",
     title: "Restaurante Sabor Curitibano",
     alt: "Imagem de uma previa do site",
